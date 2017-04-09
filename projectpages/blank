@@ -1,0 +1,13 @@
+<?php
+
+$projectpage->url="";
+$projectpage->title="";
+$projectpage->summary="";
+$projectpage->plang[]="";
+$projectpage->plango[]=""; // Languages used in project, but not by me
+$projectpage->tech[]="";
+$projectpage->img="";
+$projectpage->homepage="";
+$projectpage->me="";
+$projectpage->order=0;
+$projectpage->content="";

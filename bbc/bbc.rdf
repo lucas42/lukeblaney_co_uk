@@ -1,0 +1,14 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix artists: <http://www.bbc.co.uk/music/artists/>.
+@prefix progs: <http://www.bbc.co.uk/programmes/>.
+@prefix po: <http://purl.org/ontology/po/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+
+
+artists:48b13e1a-e7ee-4d26-b25c-4dab314b0dbc#artist owl:sameAs artists:0adae07f-84a9-4168-9523-855c64dd5ae0#artist .
+progs:b006qgt7#programme po:episode progs:b00jcny9#programme .
+progs:b00783nc#programme rdf:type po:Series .
+progs:b00sv8gw#programme owl:sameAs progs:b00svc7s#programme .
+progs:b00sq18q#programme owl:sameAs progs:b00sqvhc#programme .
+progs:b00smvll#programme owl:sameAs progs:b00ssp9v#programme .

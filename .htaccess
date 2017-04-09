@@ -1,0 +1,2 @@
+ErrorDocument 404 /stupidapache.php
+ErrorDocument 406 /stupidapache.php
