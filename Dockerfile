@@ -1,11 +1,12 @@
 FROM php:5.4-apache
 
-WORKDIR /var/www/html
+WORKDIR /srv/lukeblaney.co.uk
 
 # Use the default production configuration
 COPY php.ini /usr/local/etc/php/conf.d/
 RUN echo "ServerName localhost\nServerAdmin webmaster@localhost" >> /etc/apache2/apache2.conf
-COPY vhost.conf /etc/apache2/sites-available/000-default.conf
+COPY vhost.conf /etc/apache2/sites-available/lukeblaney.co.uk.conf
+RUN a2ensite lukeblaney.co.uk
 
 COPY src/. ./
 
