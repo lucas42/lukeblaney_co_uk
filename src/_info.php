@@ -5,7 +5,5 @@
 		"ci" => [
 			"circle" => "gh/lucas42/lukeblaney.co.uk",
 		],
-		"checks" => [
-		],
 	];
 	echo json_encode($output);
