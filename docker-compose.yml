@@ -6,3 +6,4 @@ services:
     ports:
       - "8021:80"
     image: lucas42/lukeblaney.co.uk
+    restart: always
