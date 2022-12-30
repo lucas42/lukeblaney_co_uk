@@ -119,7 +119,7 @@ print "\n<script type=\"text/javascript\" src=\"/script\" ></script> ";
 print "\n</head>
 <body>
 	<header><span id=\"me\"><a href=\"/\"><img src=\"/img/logo\" alt=\"Luke 
-Blaney\" /></a></span><span id=\"about\">Web developer by day, geek by night (and cheerleader at the weekend).</span>
+Blaney\" /></a></span><span id=\"about\"></span>
 	<nav id=\"mainnav\">
 		<ul>";
 		global $links;
