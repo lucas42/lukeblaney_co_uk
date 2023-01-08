@@ -139,7 +139,12 @@ Blaney\" /></a></span><span id=\"about\"></span>
 		<span id=\"end\" />
 	</div>
 	<footer>
-		<nav><ul><li><a href=\"http://www.facebook.com/lucas42\" title=\"For people who know me\">Facebook</a></li><li><a href=\"http://twitter.com/lucas42\" title=\"For people who want to know me\">Twitter</a></li><li><a href=\"http://www.linkedin.com/in/lukeblaney\" title=\"For people who want to employ me\">LinkedIn</a></li></ul></nav>
+		<nav><ul>
+			<li><a rel=\"me\" href=\"http://www.facebook.com/lucas42\" title=\"For people who know me\">Facebook</a></li>
+			<li><a rel=\"me\" href=\"http://twitter.com/lucas42\" title=\"For people who want to know me\">Twitter</a></li>
+			<li><a rel=\"me\" href=\"http://www.linkedin.com/in/lukeblaney\" title=\"For people who want to employ me\">LinkedIn</a></li>
+			<li><a rel=\"me\" href=\"https://hachyderm.io/@lucas42\">Mastodon</a></li>
+		</ul></nav>
 	</footer>";
 if($this->pdfavail)print "\n<a href=\"{$this->noext}.pdf\" id=\"also\">This page is also available as a pdf</a>";
 elseif($this->rdfavail)print "\n<a href=\"{$this->noext}.rdf\" id=\"also\">This page is also available as rdf</a>";

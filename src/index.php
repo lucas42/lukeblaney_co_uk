@@ -56,6 +56,12 @@ if($backend->mimetype=="application/rdf+xml")$backend->addOutput('<rdf:RDF
 				<foaf:accountName>lucas42</foaf:accountName>
 			</foaf:OnlineAccount>
 		</foaf:account>
+		<foaf:account>
+			<foaf:OnlineAccount>
+				<foaf:accountServiceHomepage rdf:resource="https://hachyderm.io/" />
+				<foaf:accountName>lucas42</foaf:accountName>
+			</foaf:OnlineAccount>
+		</foaf:account>
 		<foaf:openid rdf:resource="http://id.lukeblaney.co.uk/"/>
 		<foaf:weblog rdf:resource="http://blog.lukeblaney.co.uk/"/>
 		<foaf:made rdf:resource="http://purl.org/theatre"/>
