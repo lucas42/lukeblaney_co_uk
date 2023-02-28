@@ -27,6 +27,6 @@ if($backend->mimetype=="application/rdf+xml"){
 </rdf:RDF>');
 		$backend->printit();
 	}
-$backend->addOutput("My CV is available <a href=\"/cv.pdf\">as a pdf</a>.");
-//$backend->addOutput("It is no longer up-to-date as I have a job and stuff.", 'p');
+$backend->addOutput("My CV is available <a href=\"/cv.pdf\">as a pdf</a>.", "p");
+$backend->addOutput("I also keep <a href=\"/cv-extended.pdf\">an extended version of my CV</a>.  This contains more info about older, less relevant roles.  If you choose to look at this one, you don't get to complain about it being too long.  😛", "small");
 $backend->printit();
