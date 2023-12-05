@@ -1,4 +1,5 @@
 version: '3'
+name: lukeblaney_co_uk
 services:
   lukeblaney.co.uk:
     build: .
