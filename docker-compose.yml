@@ -4,6 +4,6 @@ services:
     build: .
     container_name: lukeblaney.co.uk
     ports:
-      - "8021:80"
+      - "8025:80"
     image: lucas42/lukeblaney.co.uk
     restart: always
