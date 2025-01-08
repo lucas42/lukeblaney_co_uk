@@ -8,7 +8,8 @@ RUN echo "ServerName localhost\nServerAdmin webmaster@localhost" >> /etc/apache2
 COPY vhost.conf /etc/apache2/sites-available/lukeblaney.co.uk.conf
 RUN a2ensite lukeblaney.co.uk
 
-COPY src/. ./
+COPY src/static/. ./
+COPY src/legacy-php/. ./
 
 ENV PORT 80
 EXPOSE $PORT
