@@ -220,4 +220,18 @@ foreach($projectpages as $project){
 	$backend->addOutput("</div>");
 }
 $backend->addOutput("</div>");
+$backend->addOutput('
+<script type="text/javascript">
+//<![CDATA[
+window.addEventListener("DOMContentLoaded", function () {
+	var thumbs = document.querySelectorAll(".projectthumb");
+	for (var i=0, l=thumbs.length; i<l; i++) {
+		thumbs[i].addEventListener("dragstart", function(event) {
+			event.dataTransfer.setData("text/uri-list", this.parentNode.href.replace(/\/?#/, "/"));
+		});
+	}
+});
+//]]>
+</script>
+');
 $backend->printit();

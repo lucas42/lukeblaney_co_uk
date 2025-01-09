@@ -110,7 +110,6 @@ if($this->rdfavail)print "\n<link rel=\"alternate\" type=\"application/rdf+xml\"
 if($this->pdfavail)print "\n<link rel=\"alternate\" type=\"application/pdf\" href=\"{$this->noext}.pdf\" /> ";
 print $this->links;
 print "\n<link rel=\"shortcut icon\" type=\"image/png\" href=\"/img/favicon\" /> ";
-print "\n<script type=\"text/javascript\" src=\"/script\" ></script> ";
 //print $this->rawhead;
 print "\n</head>
 <body>
