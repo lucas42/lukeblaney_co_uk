@@ -2,7 +2,7 @@
 require_once("conneg.php");
 class Backend{
 	private $output;
-	function __construct($navpage=null,$rdfavail=false,$pdfavail=false,$openid=false) {
+	function __construct($navpage=null,$rdfavail=false,$pdfavail=false) {
 		$this->uri=$_SERVER['REQUEST_URI'];
 		if(strpos($this->uri,"."))$this->noext=substr($this->uri,0,strpos($this->uri,"."));
 		else $this->noext=$this->uri;
@@ -17,7 +17,6 @@ class Backend{
 		$this->rdfavail=$rdfavail;
 		$this->pdfavail=$pdfavail;
 		if($this->rdfavail)$conq="application/rdf+xml, ".$conq;
-		if($openid)$conq="application/xrds+xml, ".$conq; 
 		$conneg = new contentNegotiation();
 		switch($this->extention){
 			case "xml":
@@ -96,9 +95,6 @@ class Backend{
 	/*function addRawHead($output){
 		$this->rawhead.=$output;
 	}*/
-	function addOpenId(){
-		$this->links.="\n\t<link rel=\"openid.server\" href=\"http://www.myopenid.com/server\" />\n\t<link rel=\"openid.delegate\" href=\"http://id.lukeblaney.co.uk/\" />";
-	}
 	function addCanonical($url){
 		$this->links.="\n\t<link rel=\"canonical\" href=\"".htmlspecialchars($url)."\" />";
 	}

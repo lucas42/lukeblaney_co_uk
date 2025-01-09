@@ -2,7 +2,6 @@
 
 require("backend/init.php");
 $backend=new Backend("About",true,false,true);
-$backend->addOpenId();
 if($backend->mimetype=="application/rdf+xml")$backend->addOutput('<rdf:RDF
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -62,7 +61,6 @@ if($backend->mimetype=="application/rdf+xml")$backend->addOutput('<rdf:RDF
 				<foaf:accountName>lucas42</foaf:accountName>
 			</foaf:OnlineAccount>
 		</foaf:account>
-		<foaf:openid rdf:resource="http://id.lukeblaney.co.uk/"/>
 		<foaf:weblog rdf:resource="http://blog.lukeblaney.co.uk/"/>
 		<foaf:made rdf:resource="http://purl.org/theatre"/>
 		<foaf:made rdf:resource="http://www.bedlamtheatre.co.uk"/>
@@ -92,19 +90,6 @@ if($backend->mimetype=="application/rdf+xml")$backend->addOutput('<rdf:RDF
 	</foaf:Organization>
 </rdf:RDF>');
 
-elseif($backend->mimetype=="application/xrds+xml")$backend->addOutput('
-<xrds:XRDS
-  xmlns:xrds="xri://$xrds"
-  xmlns:openid="http://openid.net/xmlns/1.0"  
-  xmlns="xri://$xrd*($v*2.0)">
-  <XRD>
-    <Service priority="5">
-      <Type>http://openid.net/signon/1.1</Type>
-      <URI>http://www.myopenid.com/server</URI>
-      <openid:Delegate>http://id.lukeblaney.co.uk/</openid:Delegate>
-    </Service>
-  </XRD>
-</xrds:XRDS>');
 
 else{
 	$backend->addOutput("<img src=\"/img/luke1\" alt=\"A pic of 
