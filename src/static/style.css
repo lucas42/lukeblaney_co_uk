@@ -366,3 +366,6 @@ blockquote{
 	max-width:100%;
 	margin: 2em auto;
 }
+.sidefig {
+	float: right;
+}
