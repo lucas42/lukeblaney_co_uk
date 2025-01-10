@@ -1,0 +1,13 @@
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:dbp="http://dbpedia.org/property/"
+	xmlns:doap="http://usefulinc.com/ns/doap#"
+	xmlns:mo="http://purl.org/ontology/mo/"
+	xmlns:cv="http://purl.org/captsolo/resume-rdf/0.2/cv#">
+	<cv:CV rdf:about="/cv/">
+		<cv:aboutPerson rdf:resource=\"https://lukeblaney.co.uk/#me\" />
+	</cv:CV>
+</rdf:RDF>
