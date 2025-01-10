@@ -11,11 +11,11 @@
 	Blaney" /></a></span><span id="about"></span>
 		<nav id="mainnav">
 			<ul>
-				<li class="currentpage"><a href="/" title="About Luke">About</a></li>
-				<li><a href="/projects/" title="Luke's Projects">Projects</a></li>
-				<li><a href="/music" title="Luke's Music">Music</a></li>
-				<li><a href="/cv" title="Luke's Curriculum Vitae">CV</a></li>
-				<li><a href="/contact" title="Contact Luke">Contact</a></li>
+				<li {{ if eq .RelPermalink "/" }} class="currentpage" {{ end }}><a href="/" title="About Luke">About</a></li>
+				<li {{ if eq .RelPermalink "/projects/" }} class="currentpage" {{ end }}><a href="/projects/" title="Luke's Projects">Projects</a></li>
+				<li {{ if eq .RelPermalink "/music/" }} class="currentpage" {{ end }}><a href="/music" title="Luke's Music">Music</a></li>
+				<li {{ if eq .RelPermalink "/cv/" }} class="currentpage" {{ end }}><a href="/cv" title="Luke's Curriculum Vitae">CV</a></li>
+				<li {{ if eq .RelPermalink "/contact/" }} class="currentpage" {{ end }}><a href="/contact" title="Contact Luke">Contact</a></li>
 				<li><a href="http://blog.lukeblaney.co.uk/" title="Luke's Blog">Blog</a></li>
 			</ul>
 		</nav>
@@ -33,6 +33,6 @@
 				<li><a rel="me" href="https://hachyderm.io/@lucas42">Mastodon</a></li>
 			</ul></nav>
 		</footer>
-		<a href="/.rdf" id="also">This page is also available as rdf</a>
+		{{ if isset .Params "rdfurl" }}<a href="{{ .Params.rdfurl }}" id="also">This page is also available as rdf</a>{{ end }}
 	</body>
 </html>
