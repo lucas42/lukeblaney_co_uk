@@ -1,6 +1,7 @@
 {{ define "main" }}
-<img src="/img/luke1" alt="A pic of 
-me" class="right" style="margin:0 2em 0 2em; height:10em;" 
-/><div style="width:30em; margin:2em auto;">I'm a web developer, mainly PHP and javascript, but I like to play with <a href="/projects/lang/">lots of other languages too</a>.  I'm originally from Belfast, now living in London via Edinburgh.</div>
+<img src="/img/luke1" alt="A pic of me" class="right" style="margin:0 2em 0 2em; height:10em;" />
+<div style="width:30em; margin:2em auto;">
+	 {{ .Content }}
+</div>
 
 {{ end }}
