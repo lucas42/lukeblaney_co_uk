@@ -1,0 +1,6 @@
+{
+  "system": "lukeblaney.co.uk",
+  "ci": {
+    "circle": "gh/lucas42/lukeblaney_co_uk"
+  }
+}
