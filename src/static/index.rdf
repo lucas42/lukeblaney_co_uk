@@ -1,20 +1,16 @@
-<?php
-
-require("backend/init.php");
-$backend=new Backend("About",true,false,true);
-if($backend->mimetype=="application/rdf+xml")$backend->addOutput('<rdf:RDF
+<rdf:RDF
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 	xmlns:foaf="http://xmlns.com/foaf/0.1/"
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
 	xmlns:dbp="http://dbpedia.org/property/"
 	xmlns:mo="http://purl.org/ontology/mo/">
-	<foaf:PersonalProfileDocument rdf:about="http://lukeblaney.co.uk'.htmlspecialchars($backend->uri).'">
+	<foaf:PersonalProfileDocument rdf:about="http://lukeblaney.co.uk/.rdf">
 		<rdfs:label>Description of the person Luke Blaney</rdfs:label>
-		<foaf:maker rdf:resource="'.htmlspecialchars($backend->noext).'#me"/>
-		<foaf:primaryTopic rdf:resource="'.htmlspecialchars($backend->noext).'#me"/>
+		<foaf:maker rdf:resource="/#me"/>
+		<foaf:primaryTopic rdf:resource="/#me"/>
 	</foaf:PersonalProfileDocument>
-	<foaf:Person rdf:about="'.htmlspecialchars($backend->noext).'#me">
+	<foaf:Person rdf:about="/#me">
 		<owl:sameAs rdf:resource="http://www.bedlamtheatre.co.uk/people/2#Agent"/>
 		<owl:sameAs rdf:resource="http://www.bbc.co.uk/users/lucas42#me"/>
 		<foaf:name>Luke Blaney</foaf:name>
@@ -88,19 +84,4 @@ if($backend->mimetype=="application/rdf+xml")$backend->addOutput('<rdf:RDF
 		<foaf:homepage rdf:resource="http://juggling.eusa.ed.ac.uk/"/>
 		<foaf:member rdf:resource="/#me"/>
 	</foaf:Organization>
-</rdf:RDF>');
-
-
-else{
-	$backend->addOutput("<img src=\"/img/luke1\" alt=\"A pic of 
-me\" class=\"right\" style=\"margin:0 2em 0 2em; height:10em;\" 
-/>");
-
-/*
- $backend->addOutput("<div style=\"width:30em; margin:2em auto;\">I'm a <span title=\"And I can use title attributes.\">web developer</span>, and <span title=\"I was thinking of putting down PHP as my main language.  In the end, I decided not to, and put down Irish instead.\">according to the 2011 UK Census</span>, I develop the web.  By day, I do <span title='Or \"web\" apps as I prefer to call them.'>fashionable HTML5 web app thingys</span>, by night I prefer the less fashionable <a href=\"http://en.wikipedia.org/wiki/Semantic_Web#content\" title=\"Am I linking to an Information Resource, or a Non-information resource?\">Semantic Web</a>.  If you want to read about some of the stuff I've done, check out my <a href=\"/projects\" title=\"All the fancy animation uses CSS only - none of your old fashioned DHTML\">projects pages</a>  (It doesn't include work stuff - its <span title=\"Yes, *all* of it, even countless numbers of wordpress upgrades.\">all top secret</span>, if I told you about it, <span title=\"Though, come to think of it - would telling somebody secret stuff and then killing them still count as a breach of contract?\">I'd have to kill you.</span>) </div>
-
- ");
- */
-$backend->addOutput("<div style=\"width:30em; margin:2em auto;\">I'm a web developer, mainly PHP and javascript, but I like to play with <a href=\"/projects/lang/\">lots of other languages too</a>.  I'm originally from Belfast, now living in London via Edinburgh.</div>");
-}
-$backend->printit();
+</rdf:RDF>

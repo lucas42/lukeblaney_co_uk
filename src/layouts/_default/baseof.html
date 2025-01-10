@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.LanguageCode }}">
+	<head>
+		<title>{{ block "title" . }} {{ .Site.Title }}{{ end }}</title>
+		<link rel="stylesheet" type="text/css" href="/style" />
+		<link rel="alternate" type="application/rdf+xml" href="/.rdf" /> 
+		<link rel="shortcut icon" type="image/png" href="/img/favicon" /> 
+	</head>
+	<body>
+		<header><span id="me"><a href="/"><img src="/img/logo" alt="Luke 
+	Blaney" /></a></span><span id="about"></span>
+		<nav id="mainnav">
+			<ul>
+				<li class="currentpage"><a href="/" title="About Luke">About</a></li>
+				<li><a href="/projects/" title="Luke's Projects">Projects</a></li>
+				<li><a href="/music" title="Luke's Music">Music</a></li>
+				<li><a href="/cv" title="Luke's Curriculum Vitae">CV</a></li>
+				<li><a href="/contact" title="Contact Luke">Contact</a></li>
+				<li><a href="http://blog.lukeblaney.co.uk/" title="Luke's Blog">Blog</a></li>
+			</ul>
+		</nav>
+		</header>
+		<div id="content">
+	    {{ block "main" . }}
+	    {{ end }}
+			<span id="end" />
+		</div>
+		<footer>
+			<nav><ul>
+				<li><a rel="me" href="http://www.facebook.com/lucas42" title="For people who know me">Facebook</a></li>
+				<li><a rel="me" href="http://twitter.com/lucas42" title="For people who want to know me">Twitter</a></li>
+				<li><a rel="me" href="http://www.linkedin.com/in/lukeblaney" title="For people who want to employ me">LinkedIn</a></li>
+				<li><a rel="me" href="https://hachyderm.io/@lucas42">Mastodon</a></li>
+			</ul></nav>
+		</footer>
+		<a href="/.rdf" id="also">This page is also available as rdf</a>
+	</body>
+</html>
