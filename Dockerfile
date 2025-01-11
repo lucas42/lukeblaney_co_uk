@@ -5,18 +5,17 @@ RUN apk add --repository=https://dl-cdn.alpinelinux.org/alpine/edge/community hu
 COPY src/. .
 RUN hugo
 
-FROM php:5.4-apache
+FROM httpd:2.4.62-alpine
 
-WORKDIR /srv/lukeblaney.co.uk
+WORKDIR /usr/local/apache2/lukeblaney.co.uk/
 
-# Use the default production configuration
-COPY src/php.ini /usr/local/etc/php/conf.d/
-RUN echo "ServerName localhost\nServerAdmin webmaster@localhost" >> /etc/apache2/apache2.conf
-COPY src/vhost.conf /etc/apache2/sites-available/lukeblaney.co.uk.conf
-RUN a2enmod rewrite
-RUN a2ensite lukeblaney.co.uk
+RUN rm /usr/local/apache2/htdocs/*
+RUN echo "ServerName localhost" >> /usr/local/apache2/conf/httpd.conf
+RUN echo "Include conf/vhost.conf" >> /usr/local/apache2/conf/httpd.conf
+RUN echo "LoadModule negotiation_module modules/mod_negotiation.so" >> /usr/local/apache2/conf/httpd.conf
+COPY src/vhost.conf /usr/local/apache2/conf/
 
-COPY src/legacy-php/. ./
+
 COPY --from=hugo-build /hugo/public/. ./
 
 ENV PORT 80
