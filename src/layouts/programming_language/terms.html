@@ -1,0 +1,16 @@
+{{ define "main" }}
+	<h1>Languages I've used</h1>
+	Here's some of the programming languages I've used (in one way or another):
+	<ul>
+		{{- range .Pages -}}
+		<li><a href="{{ strings.TrimSuffix ".html" .RelPermalink }}">{{ .LinkTitle }}</a></li>
+		{{ end }}
+	</ul>
+	And other tech I've used:
+	<ul>
+		{{ range $key, $pages := .Site.Taxonomies.technologies }}
+		<li>{{ $key }}</li>
+		{{ end }}
+	</ul>
+
+{{ end }}

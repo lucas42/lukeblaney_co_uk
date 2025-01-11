@@ -1,0 +1,44 @@
+{{ define "main" }}
+    <h1>{{ .Title }}</h1>
+    {{ with .GetTerms "projects/lang"}}
+        <div class="plangs">
+            <span class="label">Programming Languages used: </span>
+            {{ range $i, $e := . }}
+            {{- if $i }}, {{ end }}
+            <a href="/projects/lang/{{ .LinkTitle }}">{{ .LinkTitle }}</a>
+            {{- end }}
+        </div>
+    {{ end }}
+    {{ if isset .Params "technologies" }}
+    <div class="tech">
+        <span class="label">Other Technologies used: </span> {{ delimit .Params.technologies ", " }}
+    </div>
+    {{ end }}
+    {{ if isset .Params "homepage" }}
+    <div class="homepage">
+        <span class="label">Homepage: </span>
+        <a href="{{ .Params.homepage }}">{{ .Params.homepage }}</a>
+    </div>
+    {{ end }}
+    {{ if isset .Params "me" }}
+    <div class="mypart">
+        <span class="label">My Contribution: </span> {{ .Params.me}}
+    </div>
+    {{ end }}
+    {{ if isset .Params "download" }}
+    <div class="download">
+        <span class="label">Download: </span>
+        <a href="{{ .Params.download }}">{{ .Params.download }}</a>
+    </div>
+    {{ end }}
+    {{ if isset .Params "source" }}
+    <div class="source">
+        <span class="label">Source Code: </span>
+        <a href="{{ .Params.source }}">{{ .Params.source }}</a>
+    </div>
+    {{ end }}
+    <div id="project">
+        {{ .Content }}
+    </div>
+    <a href="/projects" class="navlink">Return to all projects</a>
+{{ end }}

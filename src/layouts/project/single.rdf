@@ -1,0 +1,18 @@
+{{ define "main" }}
+	<doap:Project rdf:about="/projects/{{ .File.BaseFileName }}#project">
+		<doap:name>{{ .Title }}</doap:name>
+		<rdfs:label>{{ .Title }}</rdfs:label>
+		<doap:description>{{ .Summary}}</doap:description>
+		{{- if isset .Params "homepage" }}
+		<doap:homepage rdf:resource="{{ .Params.homepage }}"/>
+		<foaf:homepage rdf:resource="{{ .Params.homepage }}"/>
+		{{- end -}}
+		{{- if isset .Params "img"}}
+		<foaf:depiction rdf:resource="{{ .Params.img }}"/>
+		{{- end -}}
+
+		{{- with .GetTerms "projects/lang"}}{{- range . }}
+		<doap:programming-language>{{ .LinkTitle }}</doap:programming-language>
+		{{- end }}{{ end }}
+	</doap:Project>
+{{- end -}}

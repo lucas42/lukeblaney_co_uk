@@ -1,0 +1,23 @@
+baseURL: 'https://lukeblaney.co.uk/'
+languageCode: en-ie
+title: Luke Blaney
+uglyURLs: true
+disablePathToLower: true
+mediaTypes:
+  application/rdf+xml:
+    suffixes:
+    - rdf
+outputFormats:
+  rdf:
+    mediaType: application/rdf+xml
+outputs:
+  page:
+    - html
+    - rdf
+  taxonomy:
+    - html
+  term:
+    - html
+taxonomies:
+  programming_language: projects/lang
+  technology: technologies

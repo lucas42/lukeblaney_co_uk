@@ -1,0 +1,9 @@
+{{ define "main" }}
+	<h1>{{ .Title }}</h1>
+	Projects I've used {{ .LinkTitle }} in:
+	<ul>
+		{{- range .Pages -}}
+		<li><a href="{{ strings.TrimSuffix ".html" .RelPermalink }}">{{ .LinkTitle }}</a></li>
+		{{ end }}
+	</ul>
+{{ end }}

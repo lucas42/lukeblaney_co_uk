@@ -1,0 +1,59 @@
+{{ define "main" }}
+  <h1>Projects</h1>
+  <div id="thumbs">
+    {{ .Content }}
+
+    {{ $pages := where site.RegularPages "Type" .Type }}
+
+    {{- range $pages -}}
+      {{- if eq .Params.subtype "minor" }}{{ continue }}{{ end -}}
+
+      <a href="#{{ .File.BaseFileName }}">
+        {{- if .Params.defaultthumb -}}
+        <img class="projectthumb defaultthumb" src="/img/projects/thumbs/default" alt="{{ .LinkTitle }}" title="{{ .LinkTitle }}" id="{{ .File.BaseFileName }}thumb" />
+        {{- else -}}
+        <img class="projectthumb" src="/img/projects/thumbs/{{ .File.BaseFileName }}" alt="{{ .LinkTitle }}" title="{{ .LinkTitle }}" id="{{ .File.BaseFileName }}thumb" />
+      {{- end -}}
+      </a>
+    {{ end -}}
+      <a href="#minor"><img class="projectthumb defaultthumb" src="/img/projects/thumbs/default" alt="Minor Contributions" title="Minor Contributions" id="minorthumb" /></a>
+  </div>
+    {{ range $pages }}
+      {{- if eq .Params.subtype "minor" }}{{ continue }}{{ end -}}
+  <div id="{{ .File.BaseFileName }}" class="projsummary">
+    {{- if .Params.img }}
+    <a href="{{strings.Replace .RelPermalink ".html" ""}}">
+      <img class="projectpic" src="{{ .Params.img }}" alt="" />
+    </a>
+    {{- end }}
+    <h2>
+      <a href="{{strings.Replace .RelPermalink ".html" ""}}">{{ .LinkTitle }}</a>
+    </h2>
+    {{ .Summary}}
+    <a href="{{strings.Replace .RelPermalink ".html" ""}}" class="navlink">More Info...</a>
+  </div>
+  {{ end -}}
+  <div id="minor" class="projsummary"><h3>Minor Contributions</h3><p>A couple of projects which I wasn't really involved much in.  But I get a mention on their websites, so  I'm including them anyway.</p>
+    {{- range $pages -}}
+      {{- if not (eq .Params.subtype "minor") }}{{ continue }}{{ end}}
+      <div id="{{ .File.BaseFileName }}">
+        <h3><a href="{{strings.Replace .RelPermalink ".html" ""}}">{{ .LinkTitle }}</a></h3>
+        {{ .Summary}}
+      </div>
+   {{- end }}
+  </div>
+
+
+<script type="text/javascript">
+//<![CDATA[
+window.addEventListener("DOMContentLoaded", function () {
+  var thumbs = document.querySelectorAll(".projectthumb");
+  for (var i=0, l=thumbs.length; i<l; i++) {
+    thumbs[i].addEventListener("dragstart", function(event) {
+      event.dataTransfer.setData("text/uri-list", this.parentNode.href.replace(/\/?#/, "/"));
+    });
+  }
+});
+//]]>
+</script>
+{{ end }}

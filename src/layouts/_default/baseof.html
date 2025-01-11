@@ -12,7 +12,7 @@
 		<nav id="mainnav">
 			<ul>
 				<li {{ if eq .RelPermalink "/" }} class="currentpage" {{ end }}><a href="/" title="About Luke">About</a></li>
-				<li {{ if eq .RelPermalink "/projects" }} class="currentpage" {{ end }}><a href="/projects/" title="Luke's Projects">Projects</a></li>
+				<li {{ if or (eq .Type "project") (eq .Type "projects") }} class="currentpage" {{ end }}><a href="/projects/" title="Luke's Projects">Projects</a></li>
 				<li {{ if eq .RelPermalink "/music.html" }} class="currentpage" {{ end }}><a href="/music" title="Luke's Music">Music</a></li>
 				<li {{ if eq .RelPermalink "/cv.html" }} class="currentpage" {{ end }}><a href="/cv" title="Luke's Curriculum Vitae">CV</a></li>
 				<li {{ if eq .RelPermalink "/contact.html" }} class="currentpage" {{ end }}><a href="/contact" title="Contact Luke">Contact</a></li>

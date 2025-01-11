@@ -257,7 +257,7 @@ footer ul{
 	float:right;
 	margin-left:2em;
 }
-.caption{
+figcaption, .caption{
 	display:block;
 	text-align:center;
 	font-size:smaller;
