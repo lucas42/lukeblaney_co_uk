@@ -18,9 +18,6 @@ a:hover{
 a img{
 	border:none;
 }
-/*a img:hover{
-	border-color: #400;
-}*/
 code{
 	white-space:pre;
 }
@@ -239,13 +236,6 @@ footer ul{
 	width:250px;
 	float:left;
 }
-/*#thumbs ~ #end:before{
-	content:"Some of my more recent projects, past and present";
-}
-#thumbs ~ #end{
-	margin-top:3em;
-	clear:none;
-}*/
 .projsummary:not(:target) ~ #end:before{
 	content:"Some of my more recent projects, past and present";
 	float:right;
@@ -257,7 +247,7 @@ footer ul{
 	float:right;
 	margin-left:2em;
 }
-figcaption, .caption{
+figcaption{
 	display:block;
 	text-align:center;
 	font-size:smaller;
@@ -309,63 +299,4 @@ figcaption, .caption{
 #also:hover{
 	color: #900;
 	text-decoration:none;
-}
-.warning{
-	padding:0 2em;
-	background:#900;
-	color:#fff;
-	font-weight:bold;
-	margin:0.5em 0;
-	display:block;
-}
-
-/*blog css*/
-.post, .blogtitle {
-	margin:0 auto;
-	max-width:35em;
-}
-time{
-	color:#400;
-	font-weight: bold;
-}
-.blogtitle {
-	max-width:17.5em;
-}
-
-/* ontology css */
-.schemabox, #project.schemabox{
-	border:solid thin;
-	margin:1em 0;
-	padding:1em;
-}
-.schemabox h3{
-	margin-top:0;
-}
-.schemabox:target{
-	background:#ff9;
-}
-.term_status{
-	float:right;
-	color: #b00;
-}
-.archaic{
-	opacity: 0.5;
-}
-.examples a{
-	font-weight: normal;
-	color: inherit;
-}
-blockquote{
-	border: thin inset;
-	background: #fcc;
-	background: rgba(255, 200, 200, 0.5);
-	padding:0 0.5em;
-}
-.blockimg {
-	display: block;
-	max-width:100%;
-	margin: 2em auto;
-}
-.sidefig {
-	float: right;
 }
