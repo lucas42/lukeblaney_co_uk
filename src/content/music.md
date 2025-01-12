@@ -1,9 +1,11 @@
 ---
 title: Music
+img:
+  src: /img/lockdown-compositions.jpg
+  alt: Photo of a physical copy of The Lockdown Compositions
+  class: primary
 copyright: Copyright © Luke Blaney 2022.  All rights reserved. No parts of these compositions may be reproduced, in any form, without prior permission from the composer.
 ---
-
-{{< figure src="/img/lockdown-compositions.jpg" alt="Photo of a physical copy of The Lockdown Compositions" height="300px" class="right" >}}
 
 The Lockdown Compositions
 -------------------------

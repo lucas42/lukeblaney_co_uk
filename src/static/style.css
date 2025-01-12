@@ -110,16 +110,16 @@ footer ul{
 	border-top: solid #400;
 	margin:0;
 }
-.home {
+.content {
 	display: flex;
 	align-items: center;
 	flex-direction: row;
 }
 figure.primary img {
-	max-width: 300px;
+	width: 300px;
 }
 @media (max-width: 850px) {
-	.home {
+	.content {
 		flex-direction: column;
 	}
 	figure.primary {
