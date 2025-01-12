@@ -13,7 +13,7 @@ rdfurl: /projects/bedlam.rdf
 ---
 I was webmaster of the Edinburgh University Theatre Company in my last year of University. I redesigned the website using a linked data approach and created alternate RDF views where applicable. I also added a login system to allow members of the Company to edit relevant parts of the site and which allowed various admin tasks to be done online.
 
-{{< figure src="/img/projects/theaont" alt="Theatre Ontology" caption="A diagram of the [Theatre Ontology](http://purl.org/theatre)." class="imgholder right" >}}
+{{< figure src="/img/projects/theaont" alt="Theatre Ontology" caption="A diagram of the [Theatre Ontology](http://purl.org/theatre)." class="right" >}}
 
 Domain Driven Design
 --------------------
@@ -22,7 +22,7 @@ I was unable to find an existing Ontology for theatre, so went about designing m
 
 It was important to be able to give a list of people involved in each project. [FOAF](http://xmlns.com/foaf/spec/) has the properties _currentProject_ and _pastProject_, however these were unsuitable for a number of reasons, the main one being that they didn't provide a way of indicating what the person did. Instead I used the concept of roles. Each role consists of an agent, project and position; for acting roles the position is the portrayal of a character. Characters are themselves agents, which allows for people like Shakespeare who is the writer of many shows, but is also a character in others.
 
-{{< figure src="/img/projects/shakespeare" alt="A page on William Shakespeare" caption="A page about [William Shakespeare](http://www.bedlamtheatre.co.uk/people/79)." class="imgholder left" >}}
+{{< figure src="/img/projects/shakespeare" alt="A page on William Shakespeare" caption="A page about [William Shakespeare](http://www.bedlamtheatre.co.uk/people/79)." class="left" >}}
 
 The web as a CMS
 ----------------

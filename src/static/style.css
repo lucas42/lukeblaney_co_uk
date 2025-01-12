@@ -247,7 +247,25 @@ footer ul{
 	float:right;
 	margin-left:2em;
 }
-figcaption{
+figure {
+	clear:both;
+	margin-top:1em;
+}
+figure img{
+	max-width:40em;
+}
+figure.smaller img{
+	max-width:20em;
+}
+figure.left{
+	float:left;
+	margin-right:2em;
+}
+figure.right{
+	float:right;
+	margin-left:2em;
+}
+figure figcaption{
 	display:block;
 	text-align:center;
 	font-size:smaller;
@@ -257,24 +275,6 @@ figcaption{
 #end{
 	clear:both;
 	display:block;
-}
-.imgholder{
-	clear:both;
-	margin-top:1em;
-}
-.imgholder img{
-	max-width:40em;
-}
-.imgholder.smaller img{
-	max-width:20em;
-}
-.left{
-	float:left;
-	margin-right:2em;
-}
-.right{
-	float:right;
-	margin-left:2em;
 }
 #also{
 	font-family:cursive;

@@ -8,7 +8,7 @@ me: All of it.
 weight: 4
 rdfurl: /projects/allfeeds.rdf
 ---
-{{< figure src="/img/afss5" alt="allfeeds" caption="A screenshot of allfeeds" class="imgholder left smaller" >}}
+{{< figure src="/img/afss5" alt="allfeeds" caption="A screenshot of allfeeds" class="left smaller" >}}
 
 Allfeeds is part of my [lucOS](/projects/lucOS) project. It combines status updates from a variety of sources and displays them in a way that makes sense to me.
 
@@ -20,7 +20,7 @@ These updates are then parsed to find links, hashtags, BBC programme Ids, postco
 When found, these are replaced by appropriate media (eg pictures, videos etc.)
 A javascript client then uses ajax to fetch these updates from the database.
 
-{{< figure src="/img/afss15" alt="BBC Radio 4's profile" caption="BBC Radio 4's profile" class="imgholder right smaller" >}}
+{{< figure src="/img/afss15" alt="BBC Radio 4's profile" caption="BBC Radio 4's profile" class="right smaller" >}}
 
 
 Organising Agents
@@ -41,7 +41,7 @@ For video sites, the relevant video is embedded in the update using the HTML5 vi
 For audio sites (such as audioboo) I can either interrupt what's playing in my audio player, or queue it up to play as part of the current playlist.
 Links to BBC programmes or iplayer are replaced with the relevant thumbnail and if a copy of the programme is found on my harddrive, then the option to play is given. I also create a list of programmes mentioned so I can see what is the most popular.
 
-{{< figure src="/img/afss10" alt="RDF example" caption="Displaying info taken from RDF" class="imgholder left smaller" >}}
+{{< figure src="/img/afss10" alt="RDF example" caption="Displaying info taken from RDF" class="left smaller" >}}
 
 When looking up links, allfeeds sends a preference for RDF using conneg. If RDF is returned, then it is parsed to look for suitable information to embed in the update.
 

@@ -8,7 +8,7 @@ download: "/downloads/waffler.jar"
 weight: 10
 rdfurl: /projects/waffler.rdf
 ---
-{{< figure src="/img/projects/waffler-para" alt="Waffler in action" caption="Waffler in action." class="imgholder right" >}}
+{{< figure src="/img/projects/waffler-para" alt="Waffler in action" caption="Waffler in action." class="right" >}}
 
 Once I'd implemented gravity, I needed to allow the main character to counteract this by jumping. In most platform games, to jump in a certain direction you first jump up and then move in the desired direction. Have you ever tried this in real life? It simply dosen't work. The law of conservation of linear momentum means that if you're in mid-air with no external forces acting on you horizontally, you can't just start moving to the side (unless, of course, you propel something in the opposite direction). As a physics student, I felt that I should avoid breaking the laws of physics; therefore, in my game to jump to the side, you need to run and jump. Once you've left the ground, there's nothing you can do to influence your projectile.
 

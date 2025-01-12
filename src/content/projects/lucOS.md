@@ -8,7 +8,7 @@ me: All of it.
 weight: 3
 rdfurl: /projects/lucOS.rdf
 ---
-{{< figure src="/img/afss5" alt="lucOS" caption="A screenshot of lucOS" class="imgholder left smaller" >}}
+{{< figure src="/img/afss5" alt="lucOS" caption="A screenshot of lucOS" class="left smaller" >}}
 
 lucOS is a custom web application built in javascript utilising HTML5 and CSS3 technologies. My ultimate aim of this project is to create a system which will cater for all my day-to-day computing needs but can be accessed from anywhere. In a world of cloud computing, this is my attempt to create my own personalised cloud.
 
