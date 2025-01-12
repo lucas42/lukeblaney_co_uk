@@ -1,5 +1,9 @@
 ---
 title: Contact
+img:
+  src: /img/luke4
+  alt: Luke smiling, in a restaurant
+  class: primary
 ---
 
 Email Address: [web.NOSPAM.site@lukeblaney.co.uk](mailto:web.NOSPAM.site@lukeblaney.co.uk)
