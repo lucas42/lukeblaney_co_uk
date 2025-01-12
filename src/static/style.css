@@ -115,12 +115,18 @@ footer ul{
 	align-items: center;
 	flex-direction: row;
 }
+[data-path="/cv"] .content {
+	align-items: start;
+}
 figure.primary img {
 	width: 300px;
 }
 @media (max-width: 850px) {
 	.content {
 		flex-direction: column;
+	}
+	[data-path="/cv"] .content {
+		align-items: center;
 	}
 	figure.primary {
 		margin: 0;

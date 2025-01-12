@@ -1,5 +1,9 @@
 ---
 title: Curriculum Vitae
+img:
+  src: /img/luke3
+  alt: Luke wearing a grey shirt, in front of a white brick wall
+  class: primary
 rdfurl: /cv.rdf
 ---
 
