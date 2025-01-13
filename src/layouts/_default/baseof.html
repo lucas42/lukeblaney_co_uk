@@ -3,8 +3,10 @@
 	<head>
 		<title>{{ block "title" . }} {{ .Site.Title }}{{ end }}</title>
 		<link rel="stylesheet" type="text/css" href="/style" />
-		<link rel="alternate" type="application/rdf+xml" href="/.rdf" /> 
-		<link rel="shortcut icon" type="image/png" href="/img/favicon" /> 
+		<link rel="alternate" type="application/rdf+xml" href="/.rdf" />
+		<link rel="shortcut icon" type="image/png" href="/img/favicon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="mobile-web-app-capable" content="yes" />
 	</head>
 	<body data-path="{{ .Path }}">
 		<header><span id="me"><a href="/"><img src="/img/logo" alt="Luke 

@@ -30,21 +30,25 @@ nav li{
 	border-top:solid;
 	clear:both;
 	margin:0;
-	height:1.3em;
 	text-transform:uppercase;
-}
-#mainnav a{
-	color:#fff;
-	font-weight:normal;
+	display: flex;
+	flex-flow: row wrap;
+	padding-inline-start: 0;
 }
 #mainnav li{
 	height:1.2em;
 	padding-bottom:0.2em;
+	flex: 1;
+	text-align: center;
+	margin: 0;
+	color:#fff;
+}
+#mainnav a{
+	font-weight:normal;
+	color: inherit;
 }
 #mainnav .currentpage {
-	background:#fff;
-}
-#mainnav .currentpage a{
+	background:#fafafa;
 	color:#400;
 }
 header{
@@ -81,8 +85,7 @@ main {
 	clear:both;
 	padding:1em 2em;
 	margin:0 5%;
-	background:#fff;
-	background: rgba(255, 255, 255, 0.7);
+	background: #fafafa;
 }
 h1{
 	margin-top:0;
