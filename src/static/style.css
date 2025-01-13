@@ -136,6 +136,8 @@ figure.primary img {
 		max-width: 100%;
 	}
 }
+
+/** Project Pages **/
 .label{
 	font-weight:bold;
 }
@@ -273,10 +275,16 @@ figure.primary img {
 .projsummary:target ~ #end:before{
 	display:none;
 }
+#end{
+	clear:both;
+	display:block;
+}
 .navlink{
 	float:right;
 	margin-left:2em;
 }
+/** End Project Pages **/
+
 figure {
 	clear:both;
 	margin-top:1em;
@@ -301,10 +309,6 @@ figure figcaption{
 	font-size:smaller;
 	font-weight:bold;
 	font-family:monospace;
-}
-#end{
-	clear:both;
-	display:block;
 }
 #also{
 	font-family:cursive;
