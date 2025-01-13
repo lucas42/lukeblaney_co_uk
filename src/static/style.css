@@ -142,6 +142,7 @@ figure.primary img {
 	font-weight:bold;
 }
 #project{
+	display: inline-block;
 	margin:1em;
 }
 .homepage a, .source a, .download a{
@@ -281,7 +282,10 @@ figure.primary img {
 }
 .navlink{
 	float:right;
-	margin-left:2em;
+	margin: 0.5em;
+}
+.copyright {
+	display: block;
 }
 /** End Project Pages **/
 
