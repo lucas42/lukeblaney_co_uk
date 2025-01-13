@@ -8,6 +8,7 @@ me: All of it.
 img: "/img/projects/progs"
 weight: 5
 defaultthumb: true
+years: 2006-2011
 rdfurl: /projects/progs.rdf
 ---
 Bash script

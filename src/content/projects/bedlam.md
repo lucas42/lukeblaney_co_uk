@@ -9,6 +9,7 @@ img: "/img/projects/bedlam"
 homepage: "http://www.bedlamtheatre.co.uk"
 me: I kept the existing style and bits of the content, but completely rewrote the backend.
 weight: 1
+years: 2009-2010
 rdfurl: /projects/bedlam.rdf
 ---
 I was webmaster of the Edinburgh University Theatre Company in my last year of University. I redesigned the website using a linked data approach and created alternate RDF views where applicable. I also added a login system to allow members of the Company to edit relevant parts of the site and which allowed various admin tasks to be done online.

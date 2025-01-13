@@ -25,6 +25,11 @@
         <span class="label">My Contribution: </span> {{ .Params.me}}
     </div>
     {{ end }}
+    {{ if isset .Params "years" }}
+    <div class="years">
+        <span class="label">Timeframe: </span>{{ .Params.years }}
+    </div>
+    {{ end }}
     {{ if isset .Params "download" }}
     <div class="download">
         <span class="label">Download: </span>

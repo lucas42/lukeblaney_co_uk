@@ -6,6 +6,7 @@ projects/lang: ["Javascript", "PHP"]
 technologies: ["mySQL", "AJAX"]
 me: All of it.
 weight: 4
+years: 2007-2011
 rdfurl: /projects/allfeeds.rdf
 ---
 {{< figure src="/img/afss5" alt="allfeeds" caption="A screenshot of allfeeds" class="left smaller" >}}

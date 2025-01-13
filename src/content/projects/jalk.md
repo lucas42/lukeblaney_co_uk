@@ -9,6 +9,7 @@ me: All of it.
 weight: 9
 source: "/source/jalk.tar"
 defaultthumb: true
+years: 2007-2010
 rdfurl: /projects/jalk.rdf
 ---
 After spending quite a bit of time in the university computer labs, I discovered the joys of bash scripting, ssh and finger. By combining these utilities I was able to write a script which would list who was logged into various computers around the lab. My next step was to map computers' hostnames or ip addresses to their physical locations. Unfortunately I had to do this manually, but once it was done I was able to modify the script to output a html file which contained a basic map of the lab including who was logged onto each machine.

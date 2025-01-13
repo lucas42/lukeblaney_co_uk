@@ -6,6 +6,7 @@ projects/lang: ["Java"]
 img: "/img/projects/waffler"
 download: "/downloads/waffler.jar"
 weight: 10
+years: 2006-2007
 rdfurl: /projects/waffler.rdf
 ---
 {{< figure src="/img/projects/waffler-para" alt="Waffler in action" caption="Waffler in action." class="right" >}}

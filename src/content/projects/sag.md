@@ -8,6 +8,7 @@ source: "http://dl.dropbox.com/u/2464210/s0681043.tgz"
 me: I modified the programme to use SPARQL endpoints and added a Web interface.
 weight: 2
 defaultthumb: true
+years: 2009-2010
 rdfurl: /projects/sag.rdf
 ---
 This was my Honours project which was part of the last year of my degree.
