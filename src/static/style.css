@@ -263,6 +263,10 @@ figure.primary img {
 	height: 140px;
 	border-radius: 50px;
 }
+#lockdown-compositionsthumb:hover {
+	transform: matrix(1.2, 0.2, -1, 0.8, 2, 2);
+	border-radius: 0 60px;
+}
 
 .projsummary{
 	clear:right;
