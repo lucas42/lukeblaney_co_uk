@@ -4,7 +4,7 @@ title: My Blog
 summary: I kept a personal blog with some random writing for a couple of years
 homepage: "https://blog.lukeblaney.co.uk/"
 me: I wrote the content
-weight: 11
+weight: 7
 years: 2010-2016
 defaultthumb: true
 rdfurl: /projects/blog.rdf

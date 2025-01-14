@@ -6,7 +6,7 @@ projects/lang: ["PHP", "Javascript"]
 technologies: ["mySQL"]
 homepage: "http://vixens.eusa.ed.ac.uk/"
 me: Starting with the existing site, I made improvements to all aspects of the site.
-weight: 6
+weight: 25
 years: 2008-2010
 rdfurl: /projects/vixens.rdf
 ---

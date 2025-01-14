@@ -7,7 +7,7 @@ projects/lang: ["PHP", "Javascript"]
 technologies: ["Linked Data", "RDF", "mySQL", "BBC Glow", "HTML5"]
 homepage: "http://www.bedlamtheatre.co.uk"
 me: I kept the existing style and bits of the content, but completely rewrote the backend.
-weight: 1
+weight: 21
 years: 2009-2010
 rdfurl: /projects/bedlam.rdf
 ---

@@ -5,7 +5,7 @@ summary: A collection of subprojects which interact with each other.
 projects/lang: ["C", "Java", "Javascript", "Haskell", "Perl", "Python", "Ruby"]
 technologies: ["SQLite", "AJAX", "node.js", "HTML5", "Offline manifests"]
 me: All of it.
-weight: 11
+weight: 5
 defaultthumb: true
 years: 2011-?
 rdfurl: /projects/lucOS2.rdf

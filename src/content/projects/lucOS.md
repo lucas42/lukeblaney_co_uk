@@ -5,7 +5,7 @@ summary: A personal project which attempts to make a web-based operating system
 projects/lang: ["Javascript", "PHP"]
 technologies: ["mySQL", "AJAX"]
 me: All of it.
-weight: 3
+weight: 17
 years: 2007-2011
 rdfurl: /projects/lucOS.rdf
 ---

@@ -5,7 +5,7 @@ summary: A program which monitors who is logged into what computers and what the
 projects/lang: ["Java", "Bash"]
 technologies: ["SSH", "AJAX"]
 me: All of it.
-weight: 9
+weight: 23
 source: "/source/jalk.tar"
 defaultthumb: true
 years: 2007-2010

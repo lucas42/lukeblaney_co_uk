@@ -6,7 +6,7 @@ summary: Rockbox is open source firmware for a range of mp3 players.  I contribu
 projects/lang: ["C"]
 homepage: "http://www.rockbox.org/"
 me: The tan function on the calculator.
-weight: 1
+weight: 24
 years: 2007
 rdfurl: /projects/rockbox.rdf
 ---

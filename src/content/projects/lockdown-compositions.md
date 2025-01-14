@@ -3,7 +3,7 @@ type: project
 title: The Lockdown Compositions
 summary: A selection of musical works composed during and around the covid lockdowns
 me: Composed all the music
-weight: 12
+weight: 1
 years: 2020-2022
 download: "/media/The%20Lockdown%20Compositions.pdf"
 copyright: Copyright © Luke Blaney 2022.  All rights reserved. No parts of these compositions may be reproduced, in any form, without prior permission from the composer.

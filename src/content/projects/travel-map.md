@@ -3,7 +3,7 @@ type: project
 title: World Travel Map
 summary: A map depicting journeys I've taken across the world
 me: Plotted journeys on the map
-weight: 16
+weight: 4
 years: 2020 onwards
 rdfurl: /projects/travel-map.rdf
 ---

@@ -6,7 +6,7 @@ projects/lang: ["Prolog"]
 technologies: ["Semantic Web", "AJAX", "SPARQL"]
 source: "http://dl.dropbox.com/u/2464210/s0681043.tgz"
 me: I modified the programme to use SPARQL endpoints and added a Web interface.
-weight: 2
+weight: 19
 defaultthumb: true
 years: 2009-2010
 rdfurl: /projects/sag.rdf

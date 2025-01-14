@@ -5,7 +5,7 @@ summary: Gets updates from various sources and formats them.
 projects/lang: ["Javascript", "PHP"]
 technologies: ["mySQL", "AJAX"]
 me: All of it.
-weight: 4
+weight: 15
 years: 2007-2011
 rdfurl: /projects/allfeeds.rdf
 ---

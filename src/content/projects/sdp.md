@@ -6,7 +6,7 @@ projects/lang: ["NXC", "Perl", "Bash", "Java", "Matlab", "ActionScript", "C"]
 technologies: ["Lego", "Bluetooth"]
 homepage: "http://www.inf.ed.ac.uk/teaching/courses/sdp/"
 me: Programming the robot using NXC and the bluetooth communication in Perl.
-weight: 8
+weight: 26
 years: 2008-2009
 rdfurl: /projects/sdp.rdf
 ---

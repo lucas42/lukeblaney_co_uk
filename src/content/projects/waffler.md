@@ -4,7 +4,7 @@ title: Waffler
 summary: My first year java project
 projects/lang: ["Java"]
 download: "/downloads/waffler.jar"
-weight: 10
+weight: 29
 years: 2006-2007
 rdfurl: /projects/waffler.rdf
 ---

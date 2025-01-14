@@ -4,7 +4,7 @@ title: Mad World
 summary: A cover version of Mad World
 me: Played all the instruments, spoke the lyrics, recorded and mixed the audio.
 download: "/media/Mad%20World.mp3"
-weight: 13
+weight: 30
 years: 2002
 rdfurl: /projects/mad-world.rdf
 ---

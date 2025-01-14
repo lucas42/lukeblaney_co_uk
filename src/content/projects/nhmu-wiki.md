@@ -4,7 +4,7 @@ title: Netflix Holiday Movie Universe Wiki
 summary: A wiki covering various Netflix Christmas Films
 homepage: "https://netflix-holiday-movie-universe.fandom.com/"
 me: I founded the wiki and wrote lots of the content
-weight: 13
+weight: 3
 years: 2020 onwards
 defaultthumb: true
 rdfurl: /projects/nhmu-wiki.rdf

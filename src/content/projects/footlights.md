@@ -3,7 +3,7 @@ type: project
 title: Anything Goes Website
 summary: A website created for the Edinburgh University Footlights' 2010 production Anything Goes.
 projects/lang: ["PHP"]
-weight: 7
+weight: 22
 years: 2009-2010
 rdfurl: /projects/footlights.rdf
 ---
