@@ -264,12 +264,10 @@ figure.primary img {
 figure {
 	clear:both;
 	margin-top:1em;
+	max-width: 40em;
 }
-figure img{
-	max-width:40em;
-}
-figure.smaller img{
-	max-width:20em;
+figure.smaller{
+	max-width: 20em;
 }
 figure.left{
 	float:left;
@@ -278,6 +276,9 @@ figure.left{
 figure.right{
 	float:right;
 	margin-left:2em;
+}
+figure img{
+	max-width: 100%;
 }
 figure figcaption{
 	display:block;
