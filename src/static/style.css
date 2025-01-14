@@ -150,12 +150,13 @@ figure.primary img {
 	border: thin solid #600;
 	padding: 10px;
 	flex-grow: 1;
+	min-width: 50%;
 }
 
 @media (min-width: 700px) {
 	.projsummary{
 		min-width: 500px;
-		flex: 1;
+		flex-basis: 40%;
 	}
 }
 
