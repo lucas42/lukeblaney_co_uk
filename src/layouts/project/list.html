@@ -17,6 +17,12 @@
 				<h2>
 					<a href="{{strings.Replace .RelPermalink ".html" ""}}">{{ .LinkTitle }}</a>
 				</h2>
+
+				{{ with .Params.years }}
+				<div class="years">
+					<span class="label">Timeframe: </span>{{ . }}
+				</div>
+				{{ end }}
 				{{ .Summary}}
 				<a href="{{strings.Replace .RelPermalink ".html" ""}}" class="navlink">More Info...</a>
 			</div>
