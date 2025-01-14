@@ -228,12 +228,12 @@ figure.primary img {
 	transition: 1s ease-in;
 }
 #lucOS_thumb {
-	transition: 0.2s ease-in;
+	transition: 0.5s ease-in;
 }
 #lucOS_thumb:hover {
-	padding-top:51px;
-	margin-bottom:-51px;
-	transition: 0.5s ease-in;
+	padding-top: 80px;
+	margin-bottom: -70px;
+	transition: 0.2s ease-in;
 }
 #mad-world_thumb {
 	transition: 0.5s ease-in;
