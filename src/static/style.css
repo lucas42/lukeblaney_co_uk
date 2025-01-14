@@ -141,6 +141,35 @@ figure.primary img {
 }
 
 /** Project Pages **/
+
+#summaries {
+	display: flex;
+	flex-flow: row wrap;
+}
+.projsummary{
+	border: thin solid #600;
+	padding: 10px;
+	flex-grow: 1;
+}
+
+@media (min-width: 700px) {
+	.projsummary{
+		min-width: 500px;
+		flex: 1;
+	}
+}
+
+#summaries > :nth-child(odd) > .thumblink {
+	float: left;
+}
+#summaries > :nth-child(even) > .thumblink {
+	float: right;
+}
+.navlink {
+	display: block;
+	text-align: right;
+	clear: both;
+}
 .label{
 	font-weight:bold;
 }
@@ -151,162 +180,82 @@ figure.primary img {
 .homepage a, .source a, .download a{
 	font-weight:normal;
 }
-.projectpic{
-	float:right;
-	max-height:15em;
-	margin-left:1em;
-	clear:right;
-	margin-bottom:1em;
-}
-#thumbs a{
-	width:100px;
-}
-.projectthumb{
+.project_thumb {
 	height:100px;
 	width:100px;
 	margin:10px;
-	-webkit-transition: 1s ease-in;
-	-moz-transition: 1s ease-in;
-	-o-transition: 1s ease-in;
 	transition: 1s ease-in;
 }
-#footlightsthumb{
+.default_thumb:hover {
+	border-radius: 50px;
+}
+#footlights_thumb {
 	position:relative;
 	width:150px;
 	left:-15px;
 	margin-left:0;
 	margin-right:-28px;
 	border:none;
-}
-#footlightsthumb{
-	-webkit-transition: 0.2s ease-in;
-	-moz-transition: 0.2s ease-in;
-	-o-transition: 0.2s ease-in;
 	transition: 0.2s ease-in;
 }
-#footlightsthumb:hover{
-	-webkit-transform: rotate(60deg);
-	-moz-transform: rotate(60deg);
+#footlights_thumb:hover {
 	transform: rotate(60deg);
-	-webkit-transition: 1s linear;
-	-moz-transition: 1s ease-in;
-	-o-transition: 1s ease-in;
 	transition: 1s ease-in;
 }
-.defaultthumb{
-	border:none;
+#vixens_thumb:hover {
+	transform: rotateX(180deg);
 }
-.defaultthumb:hover{
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
+#bedlam_thumb:hover {
+	transform: rotateY(180deg);
 }
-#vixensthumb:hover{
-	-webkit-transform: rotateX(180deg);
-}
-#bedlamthumb:hover{
-	-webkit-transform: rotateY(180deg);
-}
-#sdpthumb{
-	-webkit-transition: 0.2s ease-in;
-	-moz-transition: 0.2s ease-in;
-	-o-transition: 0.2s ease-in;
+#sdp_thumb {
 	transition: 0.2s ease-in;
 }
-#sdpthumb:hover{
-	-webkit-transform: skew(-30deg);
-	-moz-transform: skew(-30deg);
+#sdp_thumb:hover {
 	transform: skew(-30deg);
 }
-#allfeedsthumb{
-	-webkit-transition: 1s linear;
-	-moz-transition: 1s ease-in;
-	-o-transition: 1s ease-in;
+#allfeeds_thumb {
 	transition: 1s ease-in;
 }
-#allfeedsthumb:hover{
-	-webkit-transform: rotateY(180deg) rotateZ(90deg);
-	-moz-transform: rotateY(180deg) rotateZ(90deg);
+#allfeeds_thumb:hover {
 	transform: rotateY(180deg) rotateZ(90deg);
 }
-#wafflerthumb{
-	-webkit-transition: 0.2s ease-out;
-	-moz-transition: 0.2s ease-in;
-	-o-transition: 0.2s ease-in;
+#waffler_thumb {
 	transition: 0.2s ease-in;
 }
-#wafflerthumb:hover{
-	-webkit-transform: scale(0.2);
-	-moz-transform: scale(0.2);
+#waffler_thumb:hover {
 	transform: scale(0.2);
-	-webkit-transition: 1s linear;
-	-moz-transition: 1s ease-in;
-	-o-transition: 1s ease-in;
 	transition: 1s ease-in;
 }
-#lucOSthumb{
-	-webkit-transition: 0.2s ease-out;
-	-moz-transition: 0.2s ease-in;
-	-o-transition: 0.2s ease-in;
+#lucOS_thumb {
 	transition: 0.2s ease-in;
 }
-#lucOSthumb:hover{
+#lucOS_thumb:hover {
 	padding-top:51px;
 	margin-bottom:-51px;
-	-webkit-transition: 0.5s ease-in;
-	-moz-transition: 0.5s ease-in;
-	-o-transition: 0.5s ease-in;
 	transition: 0.5s ease-in;
 }
-#mad-worldthumb {
+#mad-world_thumb {
 	transition: 0.5s ease-in;
 }
-#mad-worldthumb:hover {
+#mad-world_thumb:hover {
 	margin: -10px 10px;
 	height: 140px;
 	border-radius: 50px;
 }
-#lockdown-compositionsthumb:hover {
+#lockdown-compositions_thumb:hover {
 	transform: matrix(1.2, 0.2, -1, 0.8, 2, 2);
 	border-radius: 0 60px;
 }
-#travel-mapthumb {
+#travel-map_thumb {
 	transition: 0.5s ease-in;
 }
-#travel-mapthumb:hover {
+#travel-map_thumb:hover {
 	margin: 10px -10px;
 	width: 140px;
 	border-radius: 50px;
 }
 
-.projsummary{
-	clear:right;
-	padding-top:1em;
-}
-
-.projsummary:not(:target){
-	display:none;
-}
-
-#thumbs{
-	width:250px;
-	float:left;
-}
-.projsummary:not(:target) ~ #end:before{
-	content:"Some of my more recent projects, past and present";
-	float:right;
-}
-.projsummary:target ~ #end:before{
-	display:none;
-}
-#end{
-	clear:both;
-	display:block;
-}
-.navlink{
-	float:right;
-	margin: 0.5em;
-}
 .copyright {
 	display: block;
 }
