@@ -8,6 +8,7 @@ homepage: "http://vixens.eusa.ed.ac.uk/"
 me: Starting with the existing site, I made improvements to all aspects of the site.
 weight: 25
 years: 2008-2010
+tags: ["tech","uni"]
 rdfurl: /projects/vixens.rdf
 ---
 I was PR Manager for the Edinburgh Unvieristy Cheerleading Society (the Vixens) for my final two years at uni. During this time I tried to put more of an emphasis on online marketing rather than traditional methods. I began this with revamping the website, but also increased the society's social networking presence.

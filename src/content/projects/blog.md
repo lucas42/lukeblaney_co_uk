@@ -7,6 +7,7 @@ me: I wrote the content
 weight: 7
 years: 2010-2016
 defaultthumb: true
+tags: ["writing"]
 rdfurl: /projects/blog.rdf
 ---
 For a couple of years after graduating university, I kept a personal blog.  Posts were very erratic, both in terms of frequency and subject matter.

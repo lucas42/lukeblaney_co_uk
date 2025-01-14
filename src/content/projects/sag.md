@@ -9,6 +9,7 @@ me: I modified the programme to use SPARQL endpoints and added a Web interface.
 weight: 19
 defaultthumb: true
 years: 2009-2010
+tags: ["tech","uni"]
 rdfurl: /projects/sag.rdf
 ---
 This was my Honours project which was part of the last year of my degree.

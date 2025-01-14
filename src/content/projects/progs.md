@@ -8,6 +8,7 @@ me: All of it.
 weight: 19
 defaultthumb: true
 years: 2006-2011
+tags: ["tech"]
 rdfurl: /projects/progs.rdf
 ---
 {{< figure src="/img/projects/progs" alt="A screenshot of progs" class="right" >}}

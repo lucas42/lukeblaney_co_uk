@@ -7,6 +7,7 @@ technologies: ["mySQL", "AJAX"]
 me: All of it.
 weight: 15
 years: 2007-2011
+tags: ["tech"]
 rdfurl: /projects/allfeeds.rdf
 ---
 {{< figure src="/img/afss5" alt="allfeeds" caption="A screenshot of allfeeds" class="left smaller" >}}

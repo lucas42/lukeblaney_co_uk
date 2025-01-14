@@ -9,6 +9,7 @@ weight: 23
 source: "/source/jalk.tar"
 defaultthumb: true
 years: 2007-2010
+tags: ["tech","uni"]
 rdfurl: /projects/jalk.rdf
 ---
 

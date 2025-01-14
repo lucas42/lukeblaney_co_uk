@@ -9,6 +9,7 @@ homepage: "http://www.bedlamtheatre.co.uk"
 me: I kept the existing style and bits of the content, but completely rewrote the backend.
 weight: 21
 years: 2009-2010
+tags: ["tech","uni"]
 rdfurl: /projects/bedlam.rdf
 ---
 
