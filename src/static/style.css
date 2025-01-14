@@ -36,18 +36,16 @@ nav li{
 	padding-inline-start: 0;
 }
 #mainnav li{
-	height:1.2em;
-	padding-bottom:0.2em;
+	display: contents;
+}
+#mainnav li a{
+	font-weight: normal;
+	color: inherit;
 	flex: 1;
 	text-align: center;
-	margin: 0;
-	color:#fff;
+	padding: 0 15px;
 }
-#mainnav a{
-	font-weight:normal;
-	color: inherit;
-}
-#mainnav .currentpage {
+#mainnav li.currentpage a {
 	background:#fafafa;
 	color:#400;
 }
