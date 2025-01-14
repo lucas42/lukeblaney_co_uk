@@ -5,12 +5,13 @@ summary: A programme which tracks which TV and Radio programmes I've listened to
 projects/lang: ["Bash", "Java", "PHP"]
 technologies: ["mySQL"]
 me: All of it.
-img: "/img/projects/progs"
 weight: 5
 defaultthumb: true
 years: 2006-2011
 rdfurl: /projects/progs.rdf
 ---
+{{< figure src="/img/projects/progs" alt="A screenshot of progs" class="right" >}}
+
 Bash script
 -----------
 

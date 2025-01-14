@@ -4,7 +4,6 @@ title: Edinburgh University Cheerleading Society website
 summary: My aim for this site was to make it cheesy, whilst keeping it accessible.
 projects/lang: ["PHP", "Javascript"]
 technologies: ["mySQL"]
-img: "/img/projects/cheer"
 homepage: "http://vixens.eusa.ed.ac.uk/"
 me: Starting with the existing site, I made improvements to all aspects of the site.
 weight: 6
