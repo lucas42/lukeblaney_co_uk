@@ -1,5 +1,4 @@
 ---
-slug: bedlam
 type: project
 title: Bedlam Theatre Website
 summary: I was webmaster of the Edinburgh University Theatre Company in my last year of University.
