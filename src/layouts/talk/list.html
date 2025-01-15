@@ -1,0 +1,26 @@
+{{ define "main" }}
+    <h1>{{ .Title }}</h1>
+
+    <div class="talk-list">
+	{{ range sort .Pages ".Params.year" "desc" }}
+		<div class="talk">
+			<h2>
+				{{- if eq .Params.subtype "panel" }}Panel: {{ end -}}
+				{{- .Title -}}
+			</h2>
+			{{ range .Params.conferences}}
+				<div class="conference">{{ . }}</div>
+			{{ end }}
+			{{ .Summary }}
+			{{- with .Params.links }}
+			<div class="talk-links">
+				{{ with .recording }}<a href="{{ . }}">View Recording</a>{{ end }}
+				{{ with .slides }}<a href="{{ . }}">View Slides</a>{{ end }}
+				{{ with .interview }}<a href="{{ . }}">View Interview</a>{{ end }}
+				{{ with .article }}<a href="{{ . }}">View Article</a>{{ end }}
+			</div>
+			{{- end }}
+		</div>
+	{{ end }}
+	</div>
+{{ end }}

@@ -260,6 +260,38 @@ figure.primary img {
 }
 /** End Project Pages **/
 
+/** Talk Pages **/
+.talk-list {
+	max-width: 600px;
+	margin: 0 auto;
+}
+.talk-list .conference {
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.talk-list .talk:after {
+	content: "~";
+	color: #600;
+	display: block;
+	text-align: center;
+	font-size: large;
+	font-family: serif;
+}
+.talk-list .talk h2 {
+	font-size: 1.3em;
+	margin-block-end: 0.2em;
+}
+.talk-list > .talk > .talk-links {
+	margin-top: 10px;
+}
+.talk-list > .talk > .talk-links > a {
+	background: #600;
+	color: #fff;
+	border-radius: 15px;
+	padding: 0 15px;
+}
+/** End Talk Pages **/
+
 figure {
 	clear:both;
 	margin-top:1em;
