@@ -5,7 +5,7 @@ summary: A collection of subprojects which interact with each other.
 projects/lang: ["C", "Java", "Javascript", "Haskell", "Perl", "Python", "Ruby"]
 technologies: ["SQLite", "AJAX", "node.js", "HTML5", "Offline manifests"]
 me: All of it.
-weight: 5
+weight: 6
 defaultthumb: true
 years: 2011-?
 tags: ["tech"]

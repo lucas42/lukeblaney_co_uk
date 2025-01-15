@@ -254,6 +254,13 @@ figure.primary img {
 	width: 140px;
 	border-radius: 50px;
 }
+#lukeblaney\.co\.uk_thumb {
+	clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 100% 30%, 100% 30%, 100% 30%, 100% 30%, 100% 70%, 100% 100%, 0% 100%, 0% 73%, 0% 73%, 0% 26%, 0% 25%);
+}
+#lukeblaney\.co\.uk_thumb:hover {
+	clip-path: polygon(33% 14%, 65% 14%, 61% 27%, 55% 27%, 47% 72%, 67% 73%, 69% 62%, 81% 62%, 77% 85%, 20% 85%, 21% 73%, 29% 73%, 38% 26%, 30% 25%);
+	transition: 0.3s ease-in;
+}
 
 .copyright {
 	display: block;

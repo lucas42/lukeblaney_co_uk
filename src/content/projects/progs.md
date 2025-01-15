@@ -5,7 +5,7 @@ summary: A programme which tracks which TV and Radio programmes I've listened to
 projects/lang: ["Bash", "Java", "PHP"]
 technologies: ["mySQL"]
 me: All of it.
-weight: 19
+weight: 16
 defaultthumb: true
 years: 2006-2011
 tags: ["tech"]
