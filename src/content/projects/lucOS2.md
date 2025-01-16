@@ -9,7 +9,6 @@ weight: 6
 defaultthumb: true
 years: 2011-?
 tags: ["tech"]
-rdfurl: /projects/lucOS2.rdf
 ---
 This project follows on from [lucOS 1](/projects/lucOS). As I developed the project more and more, I found it getting slower and more bloated. Everything was loaded at once, which was just too much if I only wanted to do one thing. Also, I'd just started a job as a Web Developer using PHP and didn't want to end up doing more PHP in my spare time.
 

@@ -9,7 +9,6 @@ me: Programming the robot using NXC and the bluetooth communication in Perl.
 weight: 26
 years: 2008-2009
 tags: ["tech","uni"]
-rdfurl: /projects/sdp.rdf
 ---
 {{< figure src="/img/projects/sdp" alt="The robot we built, surrounded by the members of my group" caption="Our group, posing with the robot" class="right" >}}
 

@@ -9,7 +9,6 @@ me: Programmed the site and wrote all the content
 weight: 5
 years: 2010 onwards
 tags: ["tech"]
-rdfurl: /projects/lukeblaney.co.uk.rdf
 ---
 
 A personal website, which introduces me and gives a few insights about stuff I've done.

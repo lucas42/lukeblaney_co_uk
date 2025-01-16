@@ -8,7 +8,6 @@ weight: 3
 years: 2020 onwards
 defaultthumb: true
 tags: ["writing"]
-rdfurl: /projects/nhmu-wiki.rdf
 ---
 
 During the 3rd covid lockdown of 2020, I got slightly obssesed with Netflix Christmas Films.  I was disapponted to discover that no-one had started a wiki documenting them all, including in-universe lore and crossovers between films.  Therefore, I used my time stuck at home to correct this.

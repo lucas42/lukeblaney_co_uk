@@ -7,7 +7,6 @@ download: "/downloads/waffler.jar"
 weight: 29
 years: 2006-2007
 tags: ["tech","uni"]
-rdfurl: /projects/waffler.rdf
 ---
 {{< figure src="/img/projects/waffler" alt="Waffler in action" caption="Waffler in action." class="right" >}}
 

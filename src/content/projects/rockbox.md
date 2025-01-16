@@ -9,6 +9,5 @@ me: The tan function on the calculator.
 weight: 24
 years: 2007
 tags: ["tech"]
-rdfurl: /projects/rockbox.rdf
 ---
 Rockbox is open source firmware for a range of mp3 players.

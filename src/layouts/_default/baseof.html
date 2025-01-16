@@ -34,6 +34,12 @@
 				<li><a rel="me" href="https://hachyderm.io/@lucas42">Mastodon</a></li>
 			</ul></nav>
 		</footer>
-		{{ if isset .Params "rdfurl" }}<a href="{{ .Params.rdfurl }}" id="also">This page is also available as rdf</a>{{ end }}
+		{{ $basefilename := "" }}
+		{{ with .File }}
+			{{ $basefilename = .BaseFileName }}
+		{{ end }}
+		{{ with .Params.rdfurl }}
+			<a href="{{strings.Replace . "$basefilename$" $basefilename}}" id="also">This page is also available as rdf</a>
+		{{ end }}
 	</body>
 </html>

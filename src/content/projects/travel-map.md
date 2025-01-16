@@ -6,7 +6,6 @@ me: Plotted journeys on the map
 weight: 4
 years: 2020 onwards
 tags: ["travel"]
-rdfurl: /projects/travel-map.rdf
 ---
 
 

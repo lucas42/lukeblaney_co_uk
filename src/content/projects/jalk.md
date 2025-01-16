@@ -10,7 +10,6 @@ source: "/source/jalk.tar"
 defaultthumb: true
 years: 2007-2010
 tags: ["tech","uni"]
-rdfurl: /projects/jalk.rdf
 ---
 
 {{< figure src="/img/projects/computers" alt="A blurry composite photo of some computers" class="left" >}}

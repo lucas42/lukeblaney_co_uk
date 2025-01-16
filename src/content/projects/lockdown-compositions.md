@@ -8,7 +8,6 @@ years: 2020-2022
 download: "/media/The%20Lockdown%20Compositions.pdf"
 copyright: Copyright © Luke Blaney 2022.  All rights reserved. No parts of these compositions may be reproduced, in any form, without prior permission from the composer.
 tags: ["music"]
-rdfurl: /projects/lockdown-compositions.rdf
 ---
 
 {{< figure src="/img/lockdown-compositions.jpg" alt="Photo of a physical copy of The Lockdown Compositions" caption="A printed copy of the scores" class="right smaller" >}}
