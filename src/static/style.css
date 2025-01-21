@@ -261,6 +261,13 @@ figure.primary img {
 	clip-path: polygon(33% 14%, 65% 14%, 61% 27%, 55% 27%, 47% 72%, 67% 73%, 69% 62%, 81% 62%, 77% 85%, 20% 85%, 21% 73%, 29% 73%, 38% 26%, 30% 25%);
 	transition: 0.3s ease-in;
 }
+#tfluke_thumb {
+	clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 100% 0%);
+}
+#tfluke_thumb:hover {
+	clip-path: polygon(96% 99%, 0% 36%, 0% 34%, 100% 18%);
+	transition: 0.2s ease-out;
+}
 
 .copyright {
 	display: block;
