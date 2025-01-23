@@ -179,6 +179,9 @@ figure.primary img {
 .homepage a, .source a, .download a{
 	font-weight:normal;
 }
+.projsummary:not(#minor):hover {
+	background: #ddd;
+}
 .project_thumb {
 	height:100px;
 	width:100px;
@@ -188,7 +191,7 @@ figure.primary img {
 .default_thumb:hover {
 	border-radius: 50px;
 }
-#footlights_thumb {
+#footlights .project_thumb {
 	position:relative;
 	width:150px;
 	left:-15px;
@@ -197,79 +200,79 @@ figure.primary img {
 	border:none;
 	transition: 0.2s ease-in;
 }
-#footlights_thumb:hover {
+#footlights:hover .project_thumb {
 	transform: rotate(60deg);
 	transition: 1s ease-in;
 }
-#vixens_thumb:hover {
+#vixens:hover .project_thumb {
 	transform: rotateX(180deg);
 }
-#bedlam_thumb:hover {
+#bedlam:hover .project_thumb {
 	transform: rotateY(180deg);
 }
-#sdp_thumb:hover {
+#sdp:hover .project_thumb {
 	transition: 0.2s ease-in;
 	transform: skew(-30deg);
 }
-#jalk_thumb:hover {
+#jalk:hover .project_thumb {
 	transform: skew(65deg);
 	scale: 0.4;
 	transition: 0.3s ease-in;
 }
-#sag_thumb:hover {
+#sag:hover .project_thumb {
 	rotate: 540deg;
 }
-#allfeeds_thumb {
+#allfeeds .project_thumb {
 	transition: 1s ease-in;
 }
-#allfeeds_thumb:hover {
+#allfeeds:hover .project_thumb {
 	transform: rotateY(180deg) rotateZ(90deg);
 }
-#waffler_thumb {
+#waffler .project_thumb {
 	transition: 0.2s ease-in;
 }
-#waffler_thumb:hover {
+#waffler:hover .project_thumb {
 	transform: scale(0.2);
 	transition: 1s ease-in;
 }
-#progs_thumb:hover {
+#progs:hover .project_thumb {
 	transform: scale(2, 0.05);
 	transition: 0.2s ease-in;
 	border-radius: 37px;
 }
-#blog_thumb:hover {
+#blog:hover .project_thumb {
 	transform: scale(0.7, 1.5);
 	rotate: 32deg;
 	transition: 0.2s ease-in;
 }
-#lucOS_thumb:hover {
+#lucOS:hover .project_thumb {
 	padding-top: 80px;
 	margin-bottom: -70px;
 	transition: 0.2s ease-in;
 }
-#lucOS2_thumb:hover {
+#lucOS2:hover .project_thumb {
 	transition: 0.3s ease-in;
 	rotate: 45deg;
 	transform-origin: top;
 }
-#lucOS4_thumb {
+#lucOS4 .project_thumb {
 	clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0%);
 	padding-left: 0;
 }
-#lucOS4_thumb:hover {
+#lucOS4:hover .project_thumb {
 	clip-path: polygon(0 0, 0 100%, 67% 100%, 68% 0%);
 	padding-left: 15%;
 }
-#mad-world_thumb:hover {
+#mad-world:hover .project_thumb {
 	margin: -10px 10px;
 	height: 140px;
 	border-radius: 50px;
 }
-#lockdown-compositions_thumb:hover {
+#lockdown-compositions:hover .project_thumb {
 	transform: matrix(1.2, 0.2, -1, 0.8, 2, 2);
 	border-radius: 0 60px;
 }
-#travel-map_thumb:hover {
+#travel-map:hover .project_thumb {
 	margin: 10px -10px;
 	width: 140px;
 	border-radius: 50px;
@@ -277,14 +280,14 @@ figure.primary img {
 #lukeblaney\.co\.uk_thumb {
 	clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 100% 30%, 100% 30%, 100% 30%, 100% 30%, 100% 70%, 100% 100%, 0% 100%, 0% 73%, 0% 73%, 0% 26%, 0% 25%);
 }
-#lukeblaney\.co\.uk_thumb:hover {
+#lukeblaney\.co\.uk:hover .project_thumb {
 	clip-path: polygon(33% 14%, 65% 14%, 61% 27%, 55% 27%, 47% 72%, 67% 73%, 69% 62%, 81% 62%, 77% 85%, 20% 85%, 21% 73%, 29% 73%, 38% 26%, 30% 25%);
 	transition: 0.3s ease-in;
 }
-#tfluke_thumb {
+#tfluke .project_thumb {
 	clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 100% 0%);
 }
-#tfluke_thumb:hover {
+#tfluke:hover .project_thumb {
 	clip-path: polygon(96% 99%, 0% 36%, 0% 34%, 100% 18%);
 	transition: 0.2s ease-out;
 }
@@ -292,7 +295,7 @@ figure.primary img {
 	clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 100% 100%);
 	transition: 0.2s ease-in;
 }
-#nhmu-wiki_thumb:hover {
+#nhmu-wiki:hover .project_thumb {
 	clip-path: polygon(50% 0%, 50% 0%, 6% 100%, 90% 100%);
 	transition: 0.5s ease-out;
 }
