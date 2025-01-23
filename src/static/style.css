@@ -248,6 +248,14 @@ figure.primary img {
 	transition: 0.2s ease-in;
 	border-radius: 37px;
 }
+#blog_thumb {
+	transition: 0.5s ease-out;
+}
+#blog_thumb:hover {
+	transform: scale(0.7, 1.5);
+	rotate: 32deg;
+	transition: 0.2s ease-in;
+}
 #lucOS_thumb {
 	transition: 0.5s ease-in;
 }
