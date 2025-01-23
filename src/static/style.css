@@ -221,6 +221,12 @@ figure.primary img {
 	scale: 0.4;
 	transition: 0.3s ease-in;
 }
+#sag_thumb {
+	transition: 0.5s ease-in-out;
+}
+#sag_thumb:hover {
+	rotate: 540deg;
+}
 #allfeeds_thumb {
 	transition: 1s ease-in;
 }
