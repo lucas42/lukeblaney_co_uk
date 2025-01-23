@@ -213,6 +213,14 @@ figure.primary img {
 #sdp_thumb:hover {
 	transform: skew(-30deg);
 }
+#jalk_thumb {
+	transition: 0.5s ease-out;
+}
+#jalk_thumb:hover {
+	transform: skew(65deg);
+	scale: 0.4;
+	transition: 0.3s ease-in;
+}
 #allfeeds_thumb {
 	transition: 1s ease-in;
 }

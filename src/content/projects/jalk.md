@@ -7,7 +7,6 @@ technologies: ["SSH", "AJAX"]
 me: All of it.
 weight: 23
 source: "/source/jalk.tar"
-defaultthumb: true
 years: 2007-2010
 tags: ["tech","uni"]
 ---
