@@ -6,7 +6,6 @@ projects/lang: ["Bash", "Java", "PHP"]
 technologies: ["mySQL"]
 me: All of it.
 weight: 16
-defaultthumb: true
 years: 2006-2011
 tags: ["tech"]
 ---

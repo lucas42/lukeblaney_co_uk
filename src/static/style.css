@@ -240,6 +240,14 @@ figure.primary img {
 	transform: scale(0.2);
 	transition: 1s ease-in;
 }
+#progs_thumb {
+	transition: 0.5s ease-out;
+}
+#progs_thumb:hover {
+	transform: scale(2, 0.05);
+	transition: 0.2s ease-in;
+	border-radius: 37px;
+}
 #lucOS_thumb {
 	transition: 0.5s ease-in;
 }
