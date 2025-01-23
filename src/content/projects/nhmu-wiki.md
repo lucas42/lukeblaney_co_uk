@@ -6,7 +6,6 @@ homepage: "https://netflix-holiday-movie-universe.fandom.com/"
 me: I founded the wiki and wrote lots of the content
 weight: 3
 years: 2020 onwards
-defaultthumb: true
 tags: ["writing"]
 ---
 
