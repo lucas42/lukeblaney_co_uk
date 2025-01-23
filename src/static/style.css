@@ -234,6 +234,23 @@ figure.primary img {
 	margin-bottom: -70px;
 	transition: 0.2s ease-in;
 }
+#lucOS2_thumb {
+	transition: 0.5s ease-in;
+}
+#lucOS2_thumb:hover {
+	transition: 0.3s ease-in;
+	rotate: 45deg;
+	transform-origin: top;
+}
+#lucOS4_thumb {
+	transition: 0.5s ease-in;
+	clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0%);
+	padding-left: 0;
+}
+#lucOS4_thumb:hover {
+	clip-path: polygon(0 0, 0 100%, 67% 100%, 68% 0%);
+	padding-left: 15%;
+}
 #mad-world_thumb {
 	transition: 0.5s ease-in;
 }
