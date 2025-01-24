@@ -385,9 +385,6 @@ figure.primary img {
 	padding: 0.4em 0 3em 0;
 	width:15%;
 	text-align: center;
-	-webkit-transform: rotate(-30deg);
-	-moz-transform: rotate(-30deg);
-	-o-transform: rotate(-30deg);
 	transform: rotate(-30deg);
 	float: right;
 	position: relative;
