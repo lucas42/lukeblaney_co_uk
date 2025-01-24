@@ -1,47 +1,47 @@
 /** Styles which apply everywhere **/
-body{
-	margin:0;
+body {
+	margin: 0;
 	background:#eee;
-	padding-bottom:3em;
+	padding-bottom: 3em;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-family: Geneva, Arial, Helvetica, sans-serif;
 	overflow-x: hidden;
 }
-a{
-	font-weight:bold;
-	text-decoration:none;
+a {
+	font-weight: bold;
+	text-decoration: none;
 	color:#400;
 }
-a:hover{
-	text-decoration:underline;
+a:hover {
+	text-decoration: underline;
 }
 /** End Everywhere Styles **/
 
 /** Header **/
-header{
-	float:left;
+header {
+	float: left;
 	width:90%;
 	margin:0 5%;
-	padding-top:1em;
+	padding-top: 1em;
 	background:#400;
 	color:#fff;
 }
-#mainnav ul{
-	border-top:solid;
-	clear:both;
-	margin:0;
-	text-transform:uppercase;
+#mainnav ul {
+	border-top: solid;
+	clear: both;
+	margin: 0;
+	text-transform: uppercase;
 	display: flex;
 	flex-flow: row wrap;
 	padding-inline-start: 0;
 }
-#mainnav li{
+#mainnav li {
 	display: contents;
-	list-style-type:none;
-	display:inline;
+	list-style-type: none;
+	display: inline;
 	padding:0 2em;
 }
-#mainnav li a{
+#mainnav li a {
 	font-weight: normal;
 	color: inherit;
 	flex: 1;
@@ -52,44 +52,44 @@ header{
 	background:#fafafa;
 	color:#400;
 }
-#me{
-	font-size:3em;
+#me {
+	font-size: 3em;
 	font-family:helvetica, serif;
-	display:block;
-	float:left;
-	vertical-align:middle;
+	display: block;
+	float: left;
+	vertical-align: middle;
 	padding:0.25em 0.75em;
 }
-#me a{
-	text-decoration:none;
-	font-weight:normal;
+#me a {
+	text-decoration: none;
+	font-weight: normal;
 	color:#fff;
 }
-#me img{
-	height:1em;
+#me img {
+	height: 1em;
 }
 /** End Header **/
 
 /** Footer **/
 
-body > footer{
-	padding:0;
+body > footer {
+	padding: 0;
 	margin:0 5%;
-	display:block;
+	display: block;
 	background:#fff;
-	float:left;
+	float: left;
 	width:90%;
 	font-size:0.8em;
 }
-footer li{
-	float:left;
-	list-style-type:none;
-	display:inline;
+footer li {
+	float: left;
+	list-style-type: none;
+	display: inline;
 	padding:0 2em;
 }
-footer ul{
+footer ul {
 	border-top: solid #400;
-	margin:0;
+	margin: 0;
 }
 
 /** End Footer **/
@@ -98,15 +98,15 @@ footer ul{
 /** Main Content **/
 
 main {
-	clear:both;
+	clear: both;
 	padding:1em 2em;
 	margin:0 5%;
 	background: #fafafa;
 }
-h1{
-	margin-top:0;
+h1 {
+	margin-top: 0;
 }
-h1,h2,h3,h4,h5{
+h1,h2,h3,h4,h5 {
 	color:#400;
 }
 article {
@@ -138,7 +138,7 @@ article {
 	display: flex;
 	flex-flow: row wrap;
 }
-.projsummary{
+.projsummary {
 	border: thin solid #600;
 	padding: 10px;
 	flex-grow: 1;
@@ -146,7 +146,7 @@ article {
 }
 
 @media (min-width: 700px) {
-	.projsummary{
+	.projsummary {
 		min-width: 500px;
 		flex-basis: 40%;
 	}
@@ -163,35 +163,35 @@ article {
 	text-align: right;
 	clear: both;
 }
-.label{
-	font-weight:bold;
+.label {
+	font-weight: bold;
 }
-#project{
+#project {
 	display: inline-block;
-	margin:1em;
+	margin: 1em;
 }
-.homepage a, .source a, .download a{
-	font-weight:normal;
+.homepage a, .source a, .download a {
+	font-weight: normal;
 }
 .projsummary:not(#minor):hover {
 	background: #ddd;
 }
 .project_thumb {
-	height:100px;
-	width:100px;
-	margin:10px;
+	height: 100px;
+	width: 100px;
+	margin: 10px;
 	transition: 0.5s ease-out;
 }
 .default_thumb:hover {
 	border-radius: 50px;
 }
 #footlights .project_thumb {
-	position:relative;
-	width:150px;
+	position: relative;
+	width: 150px;
 	left:-15px;
-	margin-left:0;
+	margin-left: 0;
 	margin-right:-28px;
-	border:none;
+	border: none;
 	transition: 0.2s ease-in;
 }
 #footlights:hover .project_thumb {
@@ -332,34 +332,34 @@ article {
 /** End Talk Pages **/
 
 /** Figures and Images **/
-a img{
-	border:none;
+a img {
+	border: none;
 }
 figure {
-	clear:both;
-	margin-top:1em;
+	clear: both;
+	margin-top: 1em;
 	max-width: 40em;
 }
-figure.smaller{
+figure.smaller {
 	max-width: 20em;
 }
-figure.left{
-	float:left;
-	margin-right:2em;
+figure.left {
+	float: left;
+	margin-right: 2em;
 }
-figure.right{
-	float:right;
-	margin-left:2em;
+figure.right {
+	float: right;
+	margin-left: 2em;
 }
-figure img{
+figure img {
 	max-width: 100%;
 }
-figure figcaption{
-	display:block;
-	text-align:center;
-	font-size:smaller;
-	font-weight:bold;
-	font-family:monospace;
+figure figcaption {
+	display: block;
+	text-align: center;
+	font-size: smaller;
+	font-weight: bold;
+	font-family: monospace;
 }
 figure.primary img {
 	width: 300px;
@@ -376,12 +376,12 @@ figure.primary img {
 /** End Figures and Images **/
 
 /** Also Available As links **/
-#also{
-	font-family:cursive;
-	font-style:italic;
-	font-size:smaller;
-	font-weight:normal;
-	display:block;
+#also {
+	font-family: cursive;
+	font-style: italic;
+	font-size: smaller;
+	font-weight: normal;
+	display: block;
 	padding: 0.4em 0 3em 0;
 	width:15%;
 	text-align: center;
@@ -389,15 +389,15 @@ figure.primary img {
 	-moz-transform: rotate(-30deg);
 	-o-transform: rotate(-30deg);
 	transform: rotate(-30deg);
-	float:right;
-	position:relative;
+	float: right;
+	position: relative;
 	top:-2em;
-	left:0;
+	left: 0;
 	background: #eee;
 	color: #caa;
 }
-#also:hover{
+#also:hover {
 	color: #900;
-	text-decoration:none;
+	text-decoration: none;
 }
 /** End Also Available As links **/
