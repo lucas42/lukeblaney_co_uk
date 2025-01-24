@@ -1,3 +1,4 @@
+/** Styles which apply everywhere **/
 body{
 	margin:0;
 	background:#eee;
@@ -8,23 +9,22 @@ body{
 }
 a{
 	font-weight:bold;
-	color:inherit;
 	text-decoration:none;
 	color:#400;
 }
 a:hover{
 	text-decoration:underline;
 }
-a img{
-	border:none;
-}
-code{
-	white-space:pre;
-}
-nav li{
-	list-style-type:none;
-	display:inline;
-	padding:0 2em;
+/** End Everywhere Styles **/
+
+/** Header **/
+header{
+	float:left;
+	width:90%;
+	margin:0 5%;
+	padding-top:1em;
+	background:#400;
+	color:#fff;
 }
 #mainnav ul{
 	border-top:solid;
@@ -37,6 +37,9 @@ nav li{
 }
 #mainnav li{
 	display: contents;
+	list-style-type:none;
+	display:inline;
+	padding:0 2em;
 }
 #mainnav li a{
 	font-weight: normal;
@@ -48,14 +51,6 @@ nav li{
 #mainnav li.currentpage a {
 	background:#fafafa;
 	color:#400;
-}
-header{
-	float:left;
-	width:90%;
-	margin:0 5%;
-	padding-top:1em;
-	background:#400;
-	color:#fff;
 }
 #me{
 	font-size:3em;
@@ -73,11 +68,34 @@ header{
 #me img{
 	height:1em;
 }
-#about{
-	float:right;
-	width:17em;
-	margin:1em;
+/** End Header **/
+
+/** Footer **/
+
+body > footer{
+	padding:0;
+	margin:0 5%;
+	display:block;
+	background:#fff;
+	float:left;
+	width:90%;
+	font-size:0.8em;
 }
+footer li{
+	float:left;
+	list-style-type:none;
+	display:inline;
+	padding:0 2em;
+}
+footer ul{
+	border-top: solid #400;
+	margin:0;
+}
+
+/** End Footer **/
+
+
+/** Main Content **/
 
 main {
 	clear:both;
@@ -95,22 +113,6 @@ article {
 	max-width: 600px;
 	margin: 0 auto;
 }
-body > footer{
-	padding:0;
-	margin:0 5%;
-	display:block;
-	background:#fff;
-	float:left;
-	width:90%;
-	font-size:0.8em;
-}
-footer li{
-	float:left;
-}
-footer ul{
-	border-top: solid #400;
-	margin:0;
-}
 .content {
 	display: flex;
 	align-items: center;
@@ -119,9 +121,6 @@ footer ul{
 [data-path="/cv"] .content {
 	align-items: start;
 }
-figure.primary img {
-	width: 300px;
-}
 @media (max-width: 850px) {
 	.content {
 		flex-direction: column;
@@ -129,14 +128,9 @@ figure.primary img {
 	[data-path="/cv"] .content {
 		align-items: center;
 	}
-	figure.primary {
-		margin: 0;
-		max-width: 100%;
-	}
-	figure.primary img {
-		max-width: 100%;
-	}
 }
+
+/** End Main Content **/
 
 /** Project Pages **/
 
@@ -337,6 +331,10 @@ figure.primary img {
 }
 /** End Talk Pages **/
 
+/** Figures and Images **/
+a img{
+	border:none;
+}
 figure {
 	clear:both;
 	margin-top:1em;
@@ -363,6 +361,21 @@ figure figcaption{
 	font-weight:bold;
 	font-family:monospace;
 }
+figure.primary img {
+	width: 300px;
+}
+@media (max-width: 850px) {
+	figure.primary {
+		margin: 0;
+		max-width: 100%;
+	}
+	figure.primary img {
+		max-width: 100%;
+	}
+}
+/** End Figures and Images **/
+
+/** Also Available As links **/
 #also{
 	font-family:cursive;
 	font-style:italic;
@@ -387,3 +400,4 @@ figure figcaption{
 	color: #900;
 	text-decoration:none;
 }
+/** End Also Available As links **/
