@@ -29,8 +29,8 @@ a:hover {
 /** Header **/
 header {
 	float: left;
-	width:90%;
-	margin:0 5%;
+	width: 90%;
+	margin: 0 5%;
 	padding-top: 1em;
 	background: var(--primary-color);
 	color: var(--content-background);
@@ -48,7 +48,7 @@ header {
 #mainnav li {
 	display: contents;
 	list-style-type: none;
-	padding:0 2em;
+	padding: 0 2em;
 }
 #mainnav li a {
 	font-weight: normal;
@@ -63,11 +63,11 @@ header {
 }
 #me {
 	font-size: 3em;
-	font-family:helvetica, serif;
+	font-family: helvetica, serif;
 	display: block;
 	float: left;
 	vertical-align: middle;
-	padding:0.25em 0.75em;
+	padding: 0.25em 0.75em;
 }
 #me a {
 	text-decoration: none;
@@ -82,19 +82,19 @@ header {
 
 body > footer {
 	padding: 0;
-	margin:0 5%;
+	margin: 0 5%;
 	display: block;
 	background: var(--content-background);
 	color: var(--text-color);
 	float: left;
-	width:90%;
-	font-size:0.8em;
+	width: 90%;
+	font-size: 0.8em;
 }
 footer li {
 	float: left;
 	list-style-type: none;
 	display: inline;
-	padding:0 2em;
+	padding: 0 2em;
 }
 footer ul {
 	border-top: solid var(--primary-color);
@@ -108,8 +108,8 @@ footer ul {
 
 main {
 	clear: both;
-	padding:1em 2em;
-	margin:0 5%;
+	padding: 1em 2em;
+	margin: 0 5%;
 	background: var(--content-background);
 	color: var(--text-color);
 }
@@ -394,7 +394,7 @@ figure.primary img {
 	font-weight: normal;
 	display: block;
 	padding: 0.4em 0 3em 0;
-	width:15%;
+	width: 15%;
 	text-align: center;
 	transform: rotate(-30deg);
 	float: right;
