@@ -8,13 +8,14 @@
 
 /** Styles which apply everywhere **/
 body {
-	margin: 0;
 	background: var(--page-background);
 	color: var(--text-color);
 	padding-bottom: 3em;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-family: Geneva, Arial, Helvetica, sans-serif;
 	overflow-x: hidden;
+	margin: auto;
+	max-width: 1500px;
 }
 a {
 	font-weight: bold;
