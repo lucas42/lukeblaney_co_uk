@@ -1,7 +1,16 @@
+/** Declare variables **/
+:root {
+	--text-color: #000;
+	--primary-color: #400;
+	--page-background: #eee;
+	--content-background: #fafafa;
+}
+
 /** Styles which apply everywhere **/
 body {
 	margin: 0;
-	background:#eee;
+	background: var(--page-background);
+	color: var(--text-color);
 	padding-bottom: 3em;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-family: Geneva, Arial, Helvetica, sans-serif;
@@ -10,7 +19,7 @@ body {
 a {
 	font-weight: bold;
 	text-decoration: none;
-	color:#400;
+	color: var(--primary-color);
 }
 a:hover {
 	text-decoration: underline;
@@ -23,7 +32,8 @@ header {
 	width:90%;
 	margin:0 5%;
 	padding-top: 1em;
-	background:#400;
+	background: var(--primary-color);
+	color: var(--content-background);
 	color:#fff;
 }
 #mainnav ul {
@@ -48,8 +58,8 @@ header {
 	padding: 0 15px;
 }
 #mainnav li.currentpage a {
-	background:#fafafa;
-	color:#400;
+	background: var(--content-background);
+	color: var(--primary-color);
 }
 #me {
 	font-size: 3em;
@@ -62,7 +72,6 @@ header {
 #me a {
 	text-decoration: none;
 	font-weight: normal;
-	color:#fff;
 }
 #me img {
 	height: 1em;
@@ -75,7 +84,8 @@ body > footer {
 	padding: 0;
 	margin:0 5%;
 	display: block;
-	background:#fff;
+	background: var(--content-background);
+	color: var(--text-color);
 	float: left;
 	width:90%;
 	font-size:0.8em;
@@ -87,7 +97,7 @@ footer li {
 	padding:0 2em;
 }
 footer ul {
-	border-top: solid #400;
+	border-top: solid var(--primary-color);
 	margin: 0;
 }
 
@@ -100,13 +110,14 @@ main {
 	clear: both;
 	padding:1em 2em;
 	margin:0 5%;
-	background: #fafafa;
+	background: var(--content-background);
+	color: var(--text-color);
 }
 h1 {
 	margin-top: 0;
 }
 h1,h2,h3,h4,h5 {
-	color:#400;
+	color: var(--primary-color);
 }
 article {
 	max-width: 600px;
@@ -138,7 +149,7 @@ article {
 	flex-flow: row wrap;
 }
 .projsummary {
-	border: thin solid #600;
+	border: thin solid var(--primary-color);
 	padding: 10px;
 	flex-grow: 1;
 	min-width: 50%;
@@ -173,7 +184,8 @@ article {
 	font-weight: normal;
 }
 .projsummary:not(#minor):hover {
-	background: #ddd;
+	background: color-mix(in srgb, var(--page-background), black 6%);
+	color: var(--text-color);
 }
 .project_thumb {
 	height: 100px;
@@ -309,7 +321,7 @@ article {
 }
 .talk-list .talk:after {
 	content: "~";
-	color: #600;
+	color: var(--primary-color);
 	display: block;
 	text-align: center;
 	font-size: large;
@@ -323,8 +335,8 @@ article {
 	margin-top: 10px;
 }
 .talk-list > .talk > .talk-links > a {
-	background: #600;
-	color: #fff;
+	background: var(--primary-color);
+	color: var(--content-background);
 	border-radius: 15px;
 	padding: 0 15px;
 }
@@ -389,11 +401,11 @@ figure.primary img {
 	position: relative;
 	top:-2em;
 	left: 0;
-	background: #eee;
-	color: #caa;
+	background: var(--page-background);
+	color: color-mix(in srgb, var(--primary-color), var(--page-background));
 }
 #also:hover {
-	color: #900;
+	color: var(--primary-color);
 	text-decoration: none;
 }
 /** End Also Available As links **/
