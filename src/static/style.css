@@ -313,6 +313,12 @@ article {
 	clip-path: polygon(12% 12%, 12% 74%, 75% 74%, 78% 13%, 65% 6%, 27% 5%);
 	transform: scale(1.5) translate(8px, 14px);
 }
+#bed .project_thumb {
+	transition: 0.8s ease-in;
+}
+#bed:hover .project_thumb {
+	filter: hue-rotate(180deg) drop-shadow(2px 4px 6px black);
+}
 
 .copyright {
 	display: block;
