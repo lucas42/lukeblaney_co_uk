@@ -5,7 +5,7 @@ RUN apk add --repository=https://dl-cdn.alpinelinux.org/alpine/edge/community hu
 COPY src/. .
 RUN hugo
 
-FROM httpd:2.4.65-alpine
+FROM httpd:2.4.66-alpine
 
 WORKDIR /usr/local/apache2/lukeblaney.co.uk/
 
