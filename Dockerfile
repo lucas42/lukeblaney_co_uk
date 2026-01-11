@@ -17,6 +17,3 @@ COPY src/vhost.conf /usr/local/apache2/conf/
 
 
 COPY --from=hugo-build /hugo/public/. ./
-
-ENV PORT 80
-EXPOSE $PORT
