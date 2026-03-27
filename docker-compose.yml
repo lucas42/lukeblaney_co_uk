@@ -1,7 +1,7 @@
 services:
   lukeblaney.co.uk:
     build: .
-    container_name: lukeblaney.co.uk
+    container_name: lukeblaney_co_uk
     ports:
       - $PORT:80
     image: lucas42/lukeblaney.co.uk
