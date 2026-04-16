@@ -6,6 +6,8 @@ COPY src/. .
 RUN hugo
 
 FROM httpd:2.4.66-alpine
+ARG VERSION
+ENV VERSION=$VERSION
 
 WORKDIR /usr/local/apache2/lukeblaney.co.uk/
 
