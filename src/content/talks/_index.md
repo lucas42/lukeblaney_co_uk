@@ -4,9 +4,9 @@ title: Talks and Panels
 url: talks/index.html
 outputs:
 - html
-_build:
+build:
   render: true
 cascade:
-  _build:
+  build:
     render: false
 ---
