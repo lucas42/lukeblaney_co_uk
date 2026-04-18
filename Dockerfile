@@ -1,7 +1,12 @@
 FROM alpine AS hugo-build
 
+ARG HUGO_VERSION=0.160.1
 WORKDIR /hugo
-RUN apk add --repository=https://dl-cdn.alpinelinux.org/alpine/edge/community hugo
+RUN apk add --no-cache wget ca-certificates && \
+    wget -q "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_linux-amd64.tar.gz" && \
+    tar xzf "hugo_${HUGO_VERSION}_linux-amd64.tar.gz" hugo && \
+    mv hugo /usr/local/bin/ && \
+    rm "hugo_${HUGO_VERSION}_linux-amd64.tar.gz"
 COPY src/. .
 RUN hugo
 
