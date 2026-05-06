@@ -5,7 +5,7 @@ RUN apk add --repository=https://dl-cdn.alpinelinux.org/alpine/edge/community hu
 COPY src/. .
 RUN hugo
 
-FROM httpd:2.4.66-alpine
+FROM httpd:2.4.67-alpine
 ARG VERSION
 ENV VERSION=$VERSION
 
