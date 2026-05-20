@@ -7,6 +7,14 @@ img:
 rdfurl: /cv.rdf
 ---
 
-My CV is available [as a pdf](/cv.pdf).
+My CV is available in the following formats:
 
-I also keep [an extended version of my CV](/cv-extended.pdf). This contains more info about older, less relevant roles. If you choose to look at this one, you don't get to complain about it being too long. 😛
+* [PDF](/cv.pdf)
+* [DOCX](/cv.docx)
+* [Markdown](/cv.md)
+
+I also keep a more comprehensive version, including more info about older, less relevant roles.  Also available in the following formats:
+
+* [Extended - PDF](/cv-extended.pdf)
+* [Extended - DOCX](/cv-extended.docx)
+* [Extended - Markdown](/cv-extended.md)
