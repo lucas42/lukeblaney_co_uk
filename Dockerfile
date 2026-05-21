@@ -3,6 +3,7 @@ FROM alpine AS hugo-build
 WORKDIR /hugo
 RUN apk add --repository=https://dl-cdn.alpinelinux.org/alpine/edge/community hugo
 COPY src/. .
+COPY --from=docker.io/lucas42/lukeblaney_cv:1.0.0 /cv.pdf /cv-extended.pdf /cv.docx /cv-extended.docx /cv.md /cv-extended.md /hugo/static/
 RUN hugo
 
 FROM httpd:2.4.67-alpine
