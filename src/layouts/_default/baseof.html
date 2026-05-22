@@ -1,15 +1,16 @@
+{{- $basefilename := "" }}{{ with .File }}{{ $basefilename = .BaseFileName }}{{ end -}}
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.LanguageCode }}">
 	<head>
 		<title>{{ block "title" . }} {{ .Site.Title }}{{ end }}</title>
 		<link rel="stylesheet" type="text/css" href="/style" />
-		<link rel="alternate" type="application/rdf+xml" href="/.rdf" />
+		{{ with .Params.rdfurl }}<link rel="alternate" type="application/rdf+xml" href="{{ strings.Replace . "$basefilename$" $basefilename }}" />{{ end }}
 		<link rel="shortcut icon" type="image/png" href="/img/favicon" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="mobile-web-app-capable" content="yes" />
 	</head>
 	<body data-path="{{ .Path }}">
-		<header><span id="me"><a href="/"><img src="/img/logo" alt="Luke 
+		<header><span id="me"><a href="/"><img src="/img/logo" alt="Luke
 	Blaney" /></a></span>
 		<nav id="mainnav">
 			<ul>
@@ -34,10 +35,6 @@
 				<li><a rel="me" href="https://hachyderm.io/@lucas42">Mastodon</a></li>
 			</ul></nav>
 		</footer>
-		{{ $basefilename := "" }}
-		{{ with .File }}
-			{{ $basefilename = .BaseFileName }}
-		{{ end }}
 		{{ with .Params.rdfurl }}
 			<a href="{{strings.Replace . "$basefilename$" $basefilename}}" id="also">This page is also available as rdf</a>
 		{{ end }}

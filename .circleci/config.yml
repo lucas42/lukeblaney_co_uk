@@ -2,16 +2,39 @@ version: 2.1
 orbs:
   lucos: lucos/deploy@0
 
+jobs:
+  check-links:
+    machine:
+      image: ubuntu-2204:current
+    steps:
+      - checkout
+      - run:
+          name: Build Docker image
+          command: docker build -t site-under-test .
+      - run:
+          name: Start site container
+          command: docker run -d -p 8080:80 --name site site-under-test
+      - run:
+          name: Wait for site to be ready
+          command: timeout 30 bash -c 'until curl -sf http://localhost:8080/; do sleep 1; done'
+      - run:
+          name: Check internal links
+          command: |
+            python3 -m pip install linkchecker
+            linkchecker --no-status --no-warnings http://localhost:8080/
+
 workflows:
   version: 2
   build-deploy:
     jobs:
       - lucos/build:
           serial-group: << pipeline.project.slug >>/build/<< pipeline.git.branch >>
+      - check-links
       - lucos/deploy-avalon:
           serial-group: deploy-avalon
           requires:
             - lucos/build
+            - check-links
           filters:
             branches:
               only:
