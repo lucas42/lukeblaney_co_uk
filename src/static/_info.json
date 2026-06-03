@@ -1,5 +1,7 @@
 {
   "system": "lukeblaney.co.uk",
+  "checks": {},
+  "metrics": {},
   "ci": {
     "circle": "gh/lucas42/lukeblaney_co_uk"
   }
