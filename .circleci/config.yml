@@ -20,8 +20,13 @@ jobs:
       - run:
           name: Check internal links
           command: |
-            python3 -m pip install linkchecker
-            linkchecker --no-status --no-warnings http://localhost:8080/
+            # Install into an explicit venv and invoke by absolute path. Don't
+            # rely on `linkchecker` resolving on PATH: the machine image's python
+            # layout is not stable across `ubuntu-2204:current`, and a pip-installed
+            # console script that isn't on PATH fails with a bare exit 127.
+            python3 -m venv /tmp/linkchecker-venv
+            /tmp/linkchecker-venv/bin/pip install --quiet linkchecker
+            /tmp/linkchecker-venv/bin/linkchecker --no-status --no-warnings http://localhost:8080/
 
 workflows:
   version: 2
