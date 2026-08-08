@@ -15,3 +15,6 @@ tags: ["music"]
 As a teenager, I recorded a cover of Mad World by Tears for Fears.  A version by Michael Andrews and Gary Jules had recently been played alot, following the release of the film Donnie Darko.
 
 In it, I played various instruments, including guitar, tin whistle, traditional wooden flute, electric piano and concertina.  I also spoke the lyrics over the top, inspired by some cover songs William Shatner had done.
+
+
+{{< soundcloud trackid="3A2377831103" >}}

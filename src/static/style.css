@@ -401,6 +401,14 @@ figure.primary img {
 }
 /** End Figures and Images **/
 
+/** Embeds **/
+.soundcloud-embed {
+	display: block;
+	width: stretch;
+	border: none;
+}
+/** End Embeds **/
+
 /** Also Available As links **/
 #also {
 	font-family: cursive;
