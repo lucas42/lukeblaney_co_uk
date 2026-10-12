@@ -1,7 +1,7 @@
 # Named stage so Dependabot tracks the pin and arm64 builds can resolve the plain manifest.
 # Plain manifest (application/vnd.docker.distribution.manifest.v2+json) — no platform claim.
 # See lukeblaney_co_uk#63 and lucos_deploy_orb#186.
-FROM docker.io/lucas42/lukeblaney_cv:1.0.17@sha256:ee478a4bb71e80829e3c53b24617c555ae36b84c7a89e569e95694e7c0d38744 AS cv
+FROM docker.io/lucas42/lukeblaney_cv:1.0.18@sha256:09aad157b9f52a6cb99755ddff8432f6f02e64e62c5da395380a773b782b3233 AS cv
 
 FROM alpine AS hugo-build
 
