@@ -11,7 +11,7 @@ COPY src/. .
 COPY --from=cv /cv.pdf /cv-extended.pdf /cv.docx /cv-extended.docx /cv.md /cv-extended.md /hugo/static/
 RUN hugo
 
-FROM httpd:2.4.70-alpine
+FROM httpd:2.4.71-alpine
 ARG VERSION
 ENV VERSION=$VERSION
 
